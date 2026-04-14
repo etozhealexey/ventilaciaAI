@@ -1,0 +1,28 @@
+services:
+  app:
+    build: .
+    container_name: ventilacia_ai-app
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+    env_file:
+      - .env
+    volumes:
+      # Монтируем номенклатуру для чтения
+      - ./номенклатура.csv:/app/номенклатура.csv:ro
+      # Монтируем папку загрузок для сохранения файлов
+      - ./uploads:/app/uploads
+      # Монтируем данные обучения для сохранения истории
+      - ./training_data.json:/app/training_data.json
+      # Монтируем сгенерированные Excel файлы
+      - ./reports:/app/reports
+      # Кэш индекса эмбеддингов (ускоряет повторный запуск)
+      - ./nomenclature_embeddings.npz:/app/nomenclature_embeddings.npz
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import urllib.request; urllib.request.urlopen(\"http://localhost:5000/health\")' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

@@ -1,0 +1,5275 @@
+{
+  "corrections": [
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "corrected_code": "НФ-00003579",
+      "corrected_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "corrected_unit": "шт",
+      "timestamp": "2026-02-09T11:33:50.323194"
+    },
+    {
+      "original_name": "Отвод 200мм",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ксд камера рис 1, 700х130 мм длинной 350 мм с врезкой по центру 125 мм",
+      "corrected_code": "НФ-00053172",
+      "corrected_name": "Камера статического давления 700х130/Н=350, ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 700х400 l=1500 е/ш20",
+      "corrected_code": "000000513",
+      "corrected_name": "Воздуховод 700х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 700х400/600х300",
+      "corrected_code": "000002313",
+      "corrected_name": "Переход 700х400 на 600х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Перезод 600х350/600х300",
+      "corrected_code": "000001194",
+      "corrected_name": "Переход 600х350 на 600х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град 700х400",
+      "corrected_code": "000000514",
+      "corrected_name": "Отвод 90 700х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град 400х700",
+      "corrected_code": "000005542",
+      "corrected_name": "Отвод 90 400х700",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град 600х350",
+      "corrected_code": "000000248",
+      "corrected_name": "Отвод 90 600х350",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град 350х600",
+      "corrected_code": "000009013",
+      "corrected_name": "Отвод 90 350х600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка наружняя 700х400",
+      "corrected_code": "000005016",
+      "corrected_name": "Наружная решетка 700х400(h)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка наружняя 600х350",
+      "corrected_code": "000006937",
+      "corrected_name": "Наружная решетка 600х350(h)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Саморезы 4,2х13",
+      "corrected_code": "60951",
+      "corrected_name": "Саморез 4,2х16 с буром",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Болт м8х25",
+      "corrected_code": "000007213",
+      "corrected_name": "Болт М8х25",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гайка м8",
+      "corrected_code": "000007216",
+      "corrected_name": "Гайка М8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шайба кузовная м8",
+      "corrected_code": "000010526",
+      "corrected_name": "Шайба кузовная ф8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф315 (оц.сталь)",
+      "corrected_code": "59309",
+      "corrected_name": "Хомут с гайкой М8/М10 ф315 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф250 (оц.сталь)",
+      "corrected_code": "59308",
+      "corrected_name": "Хомут с гайкой М8/М10 ф250 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф200 (оц.сталь)",
+      "corrected_code": "59307",
+      "corrected_name": "Хомут с гайкой М8/М10 ф200 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф160 (оц.сталь)",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Профиль п-образный",
+      "corrected_code": "000012645",
+      "corrected_name": "Профиль П-образный",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Лента алюминиевая 100",
+      "corrected_code": "52833",
+      "corrected_name": "Скотч алюминиевый 100мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Анкер латунный м8 забивной",
+      "corrected_code": "000009190",
+      "corrected_name": "Анкер забивной латунный M8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Силикон универсальный",
+      "corrected_code": "47829",
+      "corrected_name": "Герметик силиконовый",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Лента межфланцевая",
+      "corrected_code": "000015621",
+      "corrected_name": "Лента уплотнительная 5х10 (10м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скоба монтажная вентиляционная 20",
+      "corrected_code": "77270",
+      "corrected_name": "Скоба для фланцев",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 600х350/600х300",
+      "corrected_code": "000001194",
+      "corrected_name": "Переход 600х350 на 600х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Участок, диаметр 710, длина 1250",
+      "corrected_code": "НФ-00053081",
+      "corrected_name": "Воздуховод ПНД ф710×5×1250-Ф",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с прямоугольного сечения710х1110 на круглое диаметром710. Общая высота 500",
+      "corrected_code": "НФ-00053147",
+      "corrected_name": "Переход ПНД 710×1100⇿Ø710-Ф",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Участок, диаметр 710, длина1000",
+      "corrected_code": "НФ-00053143",
+      "corrected_name": "Воздуховод ПНД ф710×5×1000-Ф",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Участок, диаметр 710, длина 810",
+      "corrected_code": "НФ-00053145",
+      "corrected_name": "Воздуховод ПНД ф710×5×810-Ф",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с диаметра 710 на 630, длина 300",
+      "corrected_code": "НФ-00053086",
+      "corrected_name": "Переход ПНД ф710⇿ф630×5-Ф",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Участок, диаметр 710, длина 150, фланец только с одной стороны",
+      "corrected_code": "НФ-00053084",
+      "corrected_name": "Воздуховод ПНД ф710×5×150-Ф-св",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скоба для фланцев ССВ-24",
+      "corrected_code": "77270",
+      "corrected_name": "Скоба для фланцев",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Болт М8, полная резьба, длина 35 мм, сталь оцинкованная",
+      "corrected_code": "49110",
+      "corrected_name": "Болт М8х35",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Лента уплотнительная (10 м)",
+      "corrected_code": "000015621",
+      "corrected_name": "Лента уплотнительная 5х10 (10м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400х350",
+      "corrected_code": "000004869",
+      "corrected_name": "Воздуховод 400х350",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400х300",
+      "corrected_code": "000000167",
+      "corrected_name": "Воздуховод 400х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 400х350",
+      "corrected_code": "41872",
+      "corrected_name": "Заглушка 400х350",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 400х300",
+      "corrected_code": "000000239",
+      "corrected_name": "Заглушка 400х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 800х300",
+      "corrected_code": "000006327",
+      "corrected_name": "Врезка прямая 800х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400х150",
+      "corrected_code": "000005627",
+      "corrected_name": "Воздуховод 400х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 300х150",
+      "corrected_code": "000004132",
+      "corrected_name": "Воздуховод 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 300х150",
+      "corrected_code": "000006159",
+      "corrected_name": "Заглушка 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 400х150",
+      "corrected_code": "000007823",
+      "corrected_name": "Заглушка 400х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 300х300",
+      "corrected_code": "000007626",
+      "corrected_name": "Врезка прямая 300х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 800х400",
+      "corrected_code": "000001888",
+      "corrected_name": "Воздуховод 800х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф250",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 300х300",
+      "corrected_code": "000000168",
+      "corrected_name": "Воздуховод 300х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 300х200",
+      "corrected_code": "000005047",
+      "corrected_name": "Воздуховод 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 400х200",
+      "corrected_code": "000006847",
+      "corrected_name": "Врезка прямая 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 300х200",
+      "corrected_code": "000005197",
+      "corrected_name": "Заглушка 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400х400",
+      "corrected_code": "000000227",
+      "corrected_name": "Воздуховод 400х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 300х250",
+      "corrected_code": "000004559",
+      "corrected_name": "Воздуховод 300х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф125",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 500х250",
+      "corrected_code": "000001848",
+      "corrected_name": "Воздуховод 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. 500х250",
+      "corrected_code": "000005360",
+      "corrected_name": "Отвод 90 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 500х250",
+      "corrected_code": "000005377",
+      "corrected_name": "Врезка прямая 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отсод 45град. Ф900",
+      "corrected_code": "41159",
+      "corrected_name": "Отвод 45 ф900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отсод 45град. Ф700",
+      "corrected_code": "НФ-00000242",
+      "corrected_name": "Отвод 45 ф700",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отсод 45град. Ф800",
+      "corrected_code": "000005427",
+      "corrected_name": "Отвод 45 ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шина фланцевая 20мм",
+      "corrected_code": "000002984",
+      "corrected_name": "Шина №20",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 300х200",
+      "corrected_code": "000004907",
+      "corrected_name": "Врезка прямая 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град. 250х500",
+      "corrected_code": "000005376",
+      "corrected_name": "Отвод 45 250х500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90° круглый из оцн. стали Ф315, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000000026",
+      "corrected_name": "Отвод 90 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая из оцн. стали Ф315, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000001068",
+      "corrected_name": "Заглушка ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Круглый спирально-навивной воздуховод оцн. стали Ф200, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90°прямоугольный 200х300/200х300 из оцн. стали (ш-ш), r(a)=50, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000004691",
+      "corrected_name": "Отвод 90 200х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90°прямоугольный 300х200/300х200 из оцн. стали (ш-ш), r(a)=50, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000002473",
+      "corrected_name": "Отвод 90 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90°прямоугольный 200х400/200х400 из оцн. стали (ш-ш), r(a)=50, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "47492",
+      "corrected_name": "Отвод 90 200х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90°прямоугольный 400х200/400х200 из оцн. стали (ш-ш), r(a)=50, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000003380",
+      "corrected_name": "Отвод 90 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90° круглый из оцн. стали Ф250, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-45° круглый из оцн. стали Ф250, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000001038",
+      "corrected_name": "Отвод 45 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90° круглый из оцн. стали Ф200, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-45° круглый из оцн. стали Ф200, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000001741",
+      "corrected_name": "Отвод 45 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник прямоугольный равнопроходной из оцн. стали 300×200/300×200-500-0,55 (Ш/Ш/Ш), &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "45999",
+      "corrected_name": "Тройник 300х200/300х200/300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая из оцн. стали Ф250, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000001067",
+      "corrected_name": "Заглушка ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая из оцн. стали Ф200, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000000923",
+      "corrected_name": "Заглушка ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка прямоугольная из оцн. стали 400х200, &=0,55  ГОСТ Р 70349-2022",
+      "corrected_code": "000005081",
+      "corrected_name": "Заглушка 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Круглый спирально-навивной воздуховод оцн. стали Ф315, &=0,6 ГОСТ Р 70349-2022",
+      "corrected_code": "000000014",
+      "corrected_name": "Воздуховод ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Круглый спирально-навивной воздуховод оцн. стали Ф200, &=0,6 ГОСТ Р 70349-2022",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-45° круглый из оцн. стали Ф315, &=0.55, R=D (Н-Н) ГОСТ Р 70349-2022",
+      "corrected_code": "000002351",
+      "corrected_name": "Отвод 45 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с круглого на круглое сечение из оцн. стали Ф355/Ф315, &=0,55 ГОСТ Р 70349-2022",
+      "corrected_code": "000000038",
+      "corrected_name": "Переход ф355/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель для круглого воздуховода из оцн. стали Ф315 ГОСТ Р 70349-2022",
+      "corrected_code": "000001458",
+      "corrected_name": "Ниппель ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель для круглого воздуховода из оцн. стали Ф250 ГОСТ Р 70349-2022",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель для круглого воздуховода из оцн. стали Ф200 ГОСТ Р 70349-2022",
+      "corrected_code": "000000235",
+      "corrected_name": "Ниппель ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шина монтажная №20",
+      "corrected_code": "000002984",
+      "corrected_name": "Шина №20",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уголок монтажный УГФ-0",
+      "corrected_code": "48310",
+      "corrected_name": "Уголок 65х65х2,5",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 250x200; ГОСТ 14918-2020",
+      "corrected_code": "000004532",
+      "corrected_name": "Воздуховод 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 300x200; ГОСТ 14918-2020",
+      "corrected_code": "000005047",
+      "corrected_name": "Воздуховод 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 300x250; ГОСТ 14918-2020",
+      "corrected_code": "000004559",
+      "corrected_name": "Воздуховод 300х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 350x200; ГОСТ 14918-2020",
+      "corrected_code": "000007001",
+      "corrected_name": "Воздуховод 350х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 400x250; ГОСТ 14918-2020",
+      "corrected_code": "000005957",
+      "corrected_name": "Воздуховод 400х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 500x250; ГОСТ 14918-2020",
+      "corrected_code": "000001848",
+      "corrected_name": "Воздуховод 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 640x450; ГОСТ 14918-2020",
+      "corrected_code": "НФ-00000984",
+      "corrected_name": "Воздуховод 640х450",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 700x600; ГОСТ 14918-2020",
+      "corrected_code": "000007914",
+      "corrected_name": "Воздуховод 700х600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 840x550; ГОСТ 14918-2020",
+      "corrected_code": "НФ-00004219",
+      "corrected_name": "Воздуховод 840х550",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 940x650; ГОСТ 14918-2020",
+      "corrected_code": "НФ-00000982",
+      "corrected_name": "Воздуховод 940х650",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀100; ГОСТ 14918-2020",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀125; ГОСТ 14918-2020",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀160; ГОСТ 14918-2020",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀200; ГОСТ 14918-2020",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀250; ГОСТ 14918-2020",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали ⌀315; ГОСТ 14918-2020",
+      "corrected_code": "000000014",
+      "corrected_name": "Воздуховод ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 100x100; ГОСТ 14918-2020",
+      "corrected_code": "000003047",
+      "corrected_name": "Воздуховод 100х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 200x200; ГОСТ 14918-2020",
+      "corrected_code": "000000176",
+      "corrected_name": "Воздуховод 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 265x265; ГОСТ 14918-2020;",
+      "corrected_code": "НФ-00050381",
+      "corrected_name": "Воздуховод 265х265",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали 300x100; ГОСТ 14918-2020",
+      "corrected_code": "000005048",
+      "corrected_name": "Воздуховод 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ⌀100-⌀100",
+      "corrected_code": "000003433",
+      "corrected_name": "Врезка ф100/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ⌀125-⌀125",
+      "corrected_code": "000003717",
+      "corrected_name": "Врезка ф125/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ⌀160-⌀160",
+      "corrected_code": "000001242",
+      "corrected_name": "Врезка ф160/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ⌀200-⌀200",
+      "corrected_code": "000001241",
+      "corrected_name": "Врезка ф200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ⌀250-⌀250",
+      "corrected_code": "000001049",
+      "corrected_name": "Врезка ф250/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 100x100-100x100",
+      "corrected_code": "000002726",
+      "corrected_name": "Врезка прямая 100х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 200x150-200x150",
+      "corrected_code": "000006892",
+      "corrected_name": "Врезка прямая 200х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 200x200-200x200",
+      "corrected_code": "000004565",
+      "corrected_name": "Врезка прямая 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 250x500-250x500",
+      "corrected_code": "000005377",
+      "corrected_name": "Врезка прямая 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 300x100-300x100",
+      "corrected_code": "49765",
+      "corrected_name": "Врезка прямая 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 300x150-300x150",
+      "corrected_code": "000005156",
+      "corrected_name": "Врезка прямая 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая ⌀125",
+      "corrected_code": "000001066",
+      "corrected_name": "Заглушка ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая ⌀250",
+      "corrected_code": "000001067",
+      "corrected_name": "Заглушка ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 15° ⌀200-⌀200;",
+      "corrected_code": "НФ-00000727",
+      "corrected_name": "Отвод 15 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 15° ⌀250-⌀250;",
+      "corrected_code": "НФ-00000765",
+      "corrected_name": "Отвод 15 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 45° ⌀200-⌀200;",
+      "corrected_code": "000001741",
+      "corrected_name": "Отвод 45 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 75° ⌀125-⌀125;",
+      "corrected_code": "НФ-00001200",
+      "corrected_name": "Отвод 75 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 75° ⌀200-⌀200;",
+      "corrected_code": "НФ-00002338",
+      "corrected_name": "Отвод 75 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀100-⌀100;",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀125-⌀125;",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀160-⌀160;",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀200-⌀200;",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀250-⌀250;",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглого воздуховода 90° ⌀630-⌀630;",
+      "corrected_code": "000001126",
+      "corrected_name": "Отвод 90 ф630",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 45° 350x200-350x200",
+      "corrected_code": "000009253",
+      "corrected_name": "Отвод 45 350х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 90° 150x200-150x200",
+      "corrected_code": "000002480",
+      "corrected_name": "Отвод 90 150х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 90° 350x200-350x200",
+      "corrected_code": "000008486",
+      "corrected_name": "Отвод 90 350х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 90° 400x250-400x250",
+      "corrected_code": "000000218",
+      "corrected_name": "Отвод 90 400х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 90° 500x250-500x250",
+      "corrected_code": "000005360",
+      "corrected_name": "Отвод 90 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольного воздуховода 90° 550x840-550x840",
+      "corrected_code": "63403",
+      "corrected_name": "Отвод 90 550х840",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф1120 (без клапана), L=1000мм",
+      "corrected_code": "59041",
+      "corrected_name": "Узел прохода УП 1-20 ф 1120",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф800 (без клапана), L=1000",
+      "corrected_code": "000000340",
+      "corrected_name": "Узел прохода УП 1-08 ф 800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф355 (без клапана), L=1000мм",
+      "corrected_code": "000006686",
+      "corrected_name": "Узел прохода УП 1-02 ф 355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф315 (без клапана), L=1000мм",
+      "corrected_code": "000000318",
+      "corrected_name": "Узел прохода УП 1-02 ф 315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф400 (без клапана), L=1000мм",
+      "corrected_code": "000000940",
+      "corrected_name": "Узел прохода УП 1-03 ф 400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Узел прохода через кровлю УП1 ф500 (без клапана), L=1000мм",
+      "corrected_code": "000000275",
+      "corrected_name": "Узел прохода УП 1-05 ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из оцинкованной стали б=0,8мм Ø400",
+      "corrected_code": "56594",
+      "corrected_name": "Воздуховод ф400 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-45 Ø400",
+      "corrected_code": "000002198",
+      "corrected_name": "Отвод 45 ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90 Ø400",
+      "corrected_code": "000000025",
+      "corrected_name": "Отвод 90 ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90 280х280",
+      "corrected_code": "000004409",
+      "corrected_name": "Отвод 90 280х280",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 280х280/Ø400",
+      "corrected_code": "НФ-00000340",
+      "corrected_name": "Переход 280х280 на ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 600х200/Ø400",
+      "corrected_code": "44584",
+      "corrected_name": "Врезка 600х200/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка Ø400",
+      "corrected_code": "000000889",
+      "corrected_name": "Заглушка ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель Ø400",
+      "corrected_code": "000001114",
+      "corrected_name": "Ниппель ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из оцинкованной стали б=0,8мм Ø100",
+      "corrected_code": "55810",
+      "corrected_name": "Воздуховод ф100 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод-90 Ø100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель Ø100",
+      "corrected_code": "000000458",
+      "corrected_name": "Ниппель ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. Ф125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. Ф160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф125/ф100",
+      "corrected_code": "000000460",
+      "corrected_name": "Переход ф125/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х150/ф125",
+      "corrected_code": "000004305",
+      "corrected_name": "Переход 300х150 на ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссельная заслонка ф125",
+      "corrected_code": "000000665",
+      "corrected_name": "Дроссель-клапан ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссельная заслонка ф160",
+      "corrected_code": "000000961",
+      "corrected_name": "Дроссель-клапан ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф125",
+      "corrected_code": "59305",
+      "corrected_name": "Хомут с гайкой М8/М10 ф125 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут ф160",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н L=3000 (280)",
+      "corrected_code": "000000943",
+      "corrected_name": "Воздуховод ф280",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н L=3000 (400)",
+      "corrected_code": "000000016",
+      "corrected_name": "Воздуховод ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н L=3000 (560)",
+      "corrected_code": "000002076",
+      "corrected_name": "Воздуховод ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод l=1500 е/ш20 (800 * 300)",
+      "corrected_code": "000000165",
+      "corrected_name": "Воздуховод 800х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод е/ш20 (1000 * 300  l = 1000)",
+      "corrected_code": "000008177",
+      "corrected_name": "Воздуховод 1000х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход D/d (L стандарт) (560 / 400)",
+      "corrected_code": "НФ-00000125",
+      "corrected_name": "Переход ф560/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглый 60° (280)",
+      "corrected_code": "НФ-00002408",
+      "corrected_name": "Отвод 60 ф280",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглый 90° (560)",
+      "corrected_code": "000002072",
+      "corrected_name": "Отвод 90 ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круглая (400)",
+      "corrected_code": "000000889",
+      "corrected_name": "Заглушка ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d/D (280 / 560)",
+      "corrected_code": "48410",
+      "corrected_name": "Врезка ф280/ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d/D (280 / 400)",
+      "corrected_code": "53086",
+      "corrected_name": "Врезка ф280/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель круглый (400)",
+      "corrected_code": "000001114",
+      "corrected_name": "Ниппель ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель круглый (560)",
+      "corrected_code": "000004920",
+      "corrected_name": "Ниппель ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольный 90° е/ш20 (300 * 800)",
+      "corrected_code": "000005257",
+      "corrected_name": "Отвод 90 300х800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход D/d (L стандарт) трубн / нипп (250 / 160)",
+      "corrected_code": "000000344",
+      "corrected_name": "Переход ф250/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф100",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400х200",
+      "corrected_code": "000004293",
+      "corrected_name": "Воздуховод 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 200х200",
+      "corrected_code": "000000176",
+      "corrected_name": "Воздуховод 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 500х250 прямая с фланцем",
+      "corrected_code": "000005377",
+      "corrected_name": "Врезка прямая 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф100",
+      "corrected_code": "000003084",
+      "corrected_name": "Врезка прямая ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф125",
+      "corrected_code": "000001835",
+      "corrected_name": "Врезка прямая ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф160",
+      "corrected_code": "000001836",
+      "corrected_name": "Врезка прямая ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 500х250/500х250/500х250",
+      "corrected_code": "44533",
+      "corrected_name": "Тройник 500х250/500х250/500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 160/160/160",
+      "corrected_code": "000000040",
+      "corrected_name": "Тройник ф160/ф160/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 200х200",
+      "corrected_code": "000002450",
+      "corrected_name": "Заглушка 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. Ф 100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. Ф 125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. Ф 160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. 500х250",
+      "corrected_code": "000005360",
+      "corrected_name": "Отвод 90 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. Ф125",
+      "corrected_code": "000001834",
+      "corrected_name": "Отвод 45 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. Ф 160",
+      "corrected_code": "000001742",
+      "corrected_name": "Отвод 45 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 гр 500х300",
+      "corrected_code": "000001866",
+      "corrected_name": "Отвод 45 500х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 гр 300х500",
+      "corrected_code": "000005983",
+      "corrected_name": "Отвод 45 300х500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 315/250",
+      "corrected_code": "000000036",
+      "corrected_name": "Переход ф315/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая ф100",
+      "corrected_code": "000003084",
+      "corrected_name": "Врезка прямая ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф100/ф100",
+      "corrected_code": "000003433",
+      "corrected_name": "Врезка ф100/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка ф100",
+      "corrected_code": "000001065",
+      "corrected_name": "Заглушка ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка ф200",
+      "corrected_code": "000000923",
+      "corrected_name": "Заглушка ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка ф250",
+      "corrected_code": "000001067",
+      "corrected_name": "Заглушка ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. Ф100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховоды из оцинкованной стали класса \"Б\", s=0.5мм 250х150",
+      "corrected_code": "000001713",
+      "corrected_name": "Воздуховод 250х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховоды из оцинкованной стали класса \"Б\", s=0.5мм 250х200",
+      "corrected_code": "000004532",
+      "corrected_name": "Воздуховод 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ду160мм спирально-навивной S=1мм оцинк.",
+      "corrected_code": "55812",
+      "corrected_name": "Воздуховод ф160 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ду250мм спирально-навивной S=1мм оцинк.",
+      "corrected_code": "55814",
+      "corrected_name": "Воздуховод ф250 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ду315мм спирально-навивной S=1мм оцинк.",
+      "corrected_code": "55815",
+      "corrected_name": "Воздуховод ф315 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заcлонка шиберная ручная Ду160мм оцинк.",
+      "corrected_code": "000002469",
+      "corrected_name": "Шибер ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель Ду160мм оцинк.",
+      "corrected_code": "НФ-00013004",
+      "corrected_name": "Ниппель ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель Ду250мм оцинк.",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель Ду315мм оцинк.",
+      "corrected_code": "000001458",
+      "corrected_name": "Ниппель ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воронка Ду160/200х200 S=1мм оцинк.",
+      "corrected_code": "000000709",
+      "corrected_name": "Переход 200х200 на ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка с фланцем 500х250",
+      "corrected_code": "000005377",
+      "corrected_name": "Врезка прямая 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф100/200х100 (тип1)",
+      "corrected_code": "000004299",
+      "corrected_name": "Переход 200х100 на ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф160/ф200",
+      "corrected_code": "000003408",
+      "corrected_name": "Врезка ф160/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. Ф126",
+      "corrected_code": "000001834",
+      "corrected_name": "Отвод 45 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. ф250",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. Ф250",
+      "corrected_code": "000001038",
+      "corrected_name": "Отвод 45 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф250 (8мм)",
+      "corrected_code": "55814",
+      "corrected_name": "Воздуховод ф250 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф125/ф315",
+      "corrected_code": "000005050",
+      "corrected_name": "Врезка ф125/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф160/ф315",
+      "corrected_code": "000005143",
+      "corrected_name": "Врезка ф160/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф100/ф125",
+      "corrected_code": "000004078",
+      "corrected_name": "Врезка ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник ф250/ф250/ф250",
+      "corrected_code": "000000842",
+      "corrected_name": "Тройник ф250/ф250/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. 600х1200",
+      "corrected_code": "000006750",
+      "corrected_name": "Отвод 90 600х1200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град. 600х1200",
+      "corrected_code": "53977",
+      "corrected_name": "Отвод 45 600х1200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. 800х1200",
+      "corrected_code": "000003867",
+      "corrected_name": "Отвод 90 800х1200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град. 800х1200",
+      "corrected_code": "43932",
+      "corrected_name": "Отвод 45 800х1200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град. 800х1800",
+      "corrected_code": "НФ-00010030",
+      "corrected_name": "Отвод 45 800х1800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Водуховод 1800х800",
+      "corrected_code": "49722",
+      "corrected_name": "Воздуховод 1800х800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Водуховод 1200х600",
+      "corrected_code": "000001782",
+      "corrected_name": "Воздуховод 1200х600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скобы М8 для фланцев",
+      "corrected_code": "77270",
+      "corrected_name": "Скоба для фланцев",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 500х200",
+      "corrected_code": "000006038",
+      "corrected_name": "Воздуховод 500х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 500х200",
+      "corrected_code": "000005817",
+      "corrected_name": "Отвод 90 500х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град 200х500",
+      "corrected_code": "000007885",
+      "corrected_name": "Отвод 45 200х500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 500х200/400х300",
+      "corrected_code": "000009262",
+      "corrected_name": "Переход 500х200 на 400х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф315",
+      "corrected_code": "000000014",
+      "corrected_name": "Воздуховод ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод ф315",
+      "corrected_code": "000000026",
+      "corrected_name": "Отвод 90 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф315/250",
+      "corrected_code": "000000036",
+      "corrected_name": "Переход ф315/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод ф250",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф250/160",
+      "corrected_code": "000000344",
+      "corrected_name": "Переход ф250/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф160/125",
+      "corrected_code": "000003947",
+      "corrected_name": "Переход ф160/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод ф125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф125/100",
+      "corrected_code": "000000460",
+      "corrected_name": "Переход ф125/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка пр ф200",
+      "corrected_code": "000001837",
+      "corrected_name": "Врезка прямая ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 200/315",
+      "corrected_code": "000004497",
+      "corrected_name": "Врезка ф200/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 100/315",
+      "corrected_code": "000004498",
+      "corrected_name": "Врезка ф100/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 125/315",
+      "corrected_code": "000005050",
+      "corrected_name": "Врезка ф125/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 100/250",
+      "corrected_code": "000003650",
+      "corrected_name": "Врезка ф100/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 160/250",
+      "corrected_code": "000003141",
+      "corrected_name": "Врезка ф160/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 125/160",
+      "corrected_code": "000002291",
+      "corrected_name": "Врезка ф125/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 100/125",
+      "corrected_code": "000004078",
+      "corrected_name": "Врезка ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 125/125/100",
+      "corrected_code": "000004333",
+      "corrected_name": "Тройник ф125/ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 700х300",
+      "corrected_code": "000005899",
+      "corrected_name": "Воздуховод 700х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 700х300",
+      "corrected_code": "000005196",
+      "corrected_name": "Заглушка 700х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка пр 400х300",
+      "corrected_code": "000002305",
+      "corrected_name": "Врезка прямая 400х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 700х300/500х200",
+      "corrected_code": "44848",
+      "corrected_name": "Переход 700х300 на 500х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка пр ф315",
+      "corrected_code": "000003944",
+      "corrected_name": "Врезка прямая ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 500х200/315",
+      "corrected_code": "000002799",
+      "corrected_name": "Переход 500х200 на ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод ф160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод d160 ꝸ=0.5",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод d250 ꝸ=0.5",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d160/ d250",
+      "corrected_code": "000003141",
+      "corrected_name": "Врезка ф160/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d250/ d315",
+      "corrected_code": "000004056",
+      "corrected_name": "Врезка ф250/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d160, нест. ꝸ=0.5, с юбкой d210",
+      "corrected_code": "000001836",
+      "corrected_name": "Врезка прямая ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель d160",
+      "corrected_code": "НФ-00013004",
+      "corrected_name": "Ниппель ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель d250",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 d250",
+      "corrected_code": "000001038",
+      "corrected_name": "Отвод 45 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 d160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход d250/ d160",
+      "corrected_code": "000000344",
+      "corrected_name": "Переход ф250/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения 150*150мм",
+      "corrected_code": "48143",
+      "corrected_name": "Воздуховод 150х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной круглого сечения 160мм",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 150*150мм",
+      "corrected_code": "000002286",
+      "corrected_name": "Отвод 90 150х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 150*150мм",
+      "corrected_code": "000002290",
+      "corrected_name": "Заглушка 150х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с прямоугольного воздуховода 150*150мм на круглый 160мм",
+      "corrected_code": "000002293",
+      "corrected_name": "Переход 150х150на ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглый 160мм",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 160мм",
+      "corrected_code": "000000040",
+      "corrected_name": "Тройник ф160/ф160/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 300*100 (прямоуг. сеч.)*160 (круг. сеч.)",
+      "corrected_code": "000008579",
+      "corrected_name": "Врезка 300х100/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка 300*100",
+      "corrected_code": "53224",
+      "corrected_name": "Наружная решетка 300х100(h)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 160мм L=600мм",
+      "corrected_code": "000009055",
+      "corrected_name": "Шумоглушитель ф160/600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт 800*600мм с переходом на 160мм",
+      "corrected_code": "000015109",
+      "corrected_name": "Корпус фильтра ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Фильтр 160мм",
+      "corrected_code": "000002823",
+      "corrected_name": "Вставка EU3 160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Обратный клапан 160мм",
+      "corrected_code": "000010842",
+      "corrected_name": "Клапан обратный ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка металлич. 160мм",
+      "corrected_code": "42419",
+      "corrected_name": "Наружная решетка ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уплотнитель самоклеющийся",
+      "corrected_code": "000015621",
+      "corrected_name": "Лента уплотнительная 5х10 (10м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шпилька д=8мм L=2м",
+      "corrected_code": "000004914",
+      "corrected_name": "Шпилька М8 (2000мм)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут для воздух-в 160мм (без резинового профиля)",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Струбцина 8мм (М8 с болтом)",
+      "corrected_code": "000014871",
+      "corrected_name": "Струбцина М8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Профиль монтажный Lобразный 30*30мм (2м)",
+      "corrected_code": "000012644",
+      "corrected_name": "Профиль L-образный",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Труба диаметром 100х0,7 мм",
+      "corrected_code": "66096",
+      "corrected_name": "Воздуховод ф100 0,7 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Труба диаметром 200х0,7 мм",
+      "corrected_code": "66102",
+      "corrected_name": "Воздуховод ф200 0,7 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 град. Ф200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 град. Ф200",
+      "corrected_code": "000001741",
+      "corrected_name": "Отвод 45 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 400х200/300х200",
+      "corrected_code": "000004689",
+      "corrected_name": "Переход 400х200 на 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х200/200х200",
+      "corrected_code": "000005046",
+      "corrected_name": "Переход 300х200 на 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 200х200/ф160",
+      "corrected_code": "000000709",
+      "corrected_name": "Переход 200х200 на ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 400х200/300х150",
+      "corrected_code": "000006577",
+      "corrected_name": "Переход 400х200 на 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х200/ф200",
+      "corrected_code": "000007305",
+      "corrected_name": "Переход 300х200 на ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф200/ф160",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 125/200/125",
+      "corrected_code": "НФ-00051172",
+      "corrected_name": "Тройник ф125/ф200/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 125",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 125",
+      "corrected_code": "000001834",
+      "corrected_name": "Отвод 45 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 100",
+      "corrected_code": "000001535",
+      "corrected_name": "Отвод 45 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 100",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 160",
+      "corrected_code": "000001742",
+      "corrected_name": "Отвод 45 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 15 160",
+      "corrected_code": "НФ-00000570",
+      "corrected_name": "Отвод 15 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 30 100",
+      "corrected_code": "НФ-00000327",
+      "corrected_name": "Отвод 30 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вр.круглая 100/160",
+      "corrected_code": "000004913",
+      "corrected_name": "Врезка ф100/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 300х100",
+      "corrected_code": "000009175",
+      "corrected_name": "Ниппель 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х150/315",
+      "corrected_code": "000016241",
+      "corrected_name": "Переход 300х150 на ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 150х300",
+      "corrected_code": "000008300",
+      "corrected_name": "Отвод 90 150х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "е/ш",
+      "corrected_code": "000002984",
+      "corrected_name": "Шина №20",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Угол для е/ш",
+      "corrected_code": "48310",
+      "corrected_name": "Уголок 65х65х2,5",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 200/160",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод ф100",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод ф125",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод ф160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод 500х250",
+      "corrected_code": "000001848",
+      "corrected_name": "Воздуховод 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод 400х200",
+      "corrected_code": "000004293",
+      "corrected_name": "Воздуховод 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод 300х200",
+      "corrected_code": "000005047",
+      "corrected_name": "Воздуховод 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод 300х150",
+      "corrected_code": "000004132",
+      "corrected_name": "Воздуховод 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Вездуховод 200х200",
+      "corrected_code": "000000176",
+      "corrected_name": "Воздуховод 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х200/300х150",
+      "corrected_code": "000009217",
+      "corrected_name": "Переход 300х200 на 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 300х150/200х200",
+      "corrected_code": "000009634",
+      "corrected_name": "Переход 300х150 на 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 200х100/ф100",
+      "corrected_code": "000004299",
+      "corrected_name": "Переход 200х100 на ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф160/ф125",
+      "corrected_code": "000003947",
+      "corrected_name": "Переход ф160/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 300х200/500х250/300х200",
+      "corrected_code": "НФ-00050995",
+      "corrected_name": "Тройник 300х200/500х250/300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 400х200/500х250/400х200",
+      "corrected_code": "НФ-00050996",
+      "corrected_name": "Тройник 400х200/500х250/400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. 200х300",
+      "corrected_code": "000009648",
+      "corrected_name": "Отвод 45 200х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 160/200",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Фланец 200",
+      "corrected_code": "000000848",
+      "corrected_name": "Фланец ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 200",
+      "corrected_code": "000000235",
+      "corrected_name": "Ниппель ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Фланец 160",
+      "corrected_code": "000012096",
+      "corrected_name": "Клапан обратный ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Обратный клапан 200",
+      "corrected_code": "000010842",
+      "corrected_name": "Клапан обратный ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Обратный клапан 160",
+      "corrected_code": "НФ-00045947",
+      "corrected_name": "Зонт ЗВО-1 900х600, ф200, h=400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт вытяжной 900х600 островной, центральное подключение 200",
+      "corrected_code": "000004115",
+      "corrected_name": "Врезка ф160/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка D160 в D400",
+      "corrected_code": "000006361",
+      "corrected_name": "Врезка ф200/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка D200 в D400",
+      "corrected_code": "000000016",
+      "corrected_name": "Воздуховод ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 400",
+      "corrected_code": "000000025",
+      "corrected_name": "Отвод 90 ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 400",
+      "corrected_code": "000000888",
+      "corrected_name": "Тройник ф400/ф400/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 400",
+      "corrected_code": "НФ-00050973",
+      "corrected_name": "Факельный выброс ф400/ф200 L=1500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Факельный выброс 400",
+      "corrected_code": "000000889",
+      "corrected_name": "Заглушка ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка 400",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомуты 160, 200, 400",
+      "corrected_code": "59307",
+      "corrected_name": "Хомут с гайкой М8/М10 ф200 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Регулятор скорости для вентиляторов TD-1000/200 Silent (Soler & Palau)",
+      "corrected_code": "59310",
+      "corrected_name": "Хомут с гайкой М8/10 ф400 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт ЗВО-1 2000х1200, ф250 (врезку сместить ближе к широкой стороне)",
+      "corrected_code": "НФ-00045018",
+      "corrected_name": "Зонт ЗВО-1 2000х1200, ф250, h=400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт ЗВО-1 2500х1500, ф250 (врезку сместить ближе к широкой стороне)",
+      "corrected_code": "НФ-00042476",
+      "corrected_name": "Зонт ЗВО-1 2500х1500, ф250, h=400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка в круглое сечение d630 на 250",
+      "corrected_code": "000006360",
+      "corrected_name": "Врезка ф250/ф630",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый d250",
+      "corrected_code": "000000962",
+      "corrected_name": "Дроссель-клапан ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглый оцинкованный 90гр d250",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 ф250",
+      "corrected_code": "000001038",
+      "corrected_name": "Отвод 45 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель SG 90-50/1000",
+      "corrected_code": "46702",
+      "corrected_name": "Шумоглушитель 900х500/1000",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Клапан обратный КПО 900х500",
+      "corrected_code": "61917",
+      "corrected_name": "Клапан обратный 900х500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель RSA 500х250/1000М1",
+      "corrected_code": "000012003",
+      "corrected_name": "Шумоглушитель 500х250/1000",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Клапан обратный КПО 500х250",
+      "corrected_code": "000013263",
+      "corrected_name": "Клапан обратный 500х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Клапан обратный КВО 250М",
+      "corrected_code": "000009860",
+      "corrected_name": "Клапан обратный ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель CSA 125/900",
+      "corrected_code": "000008519",
+      "corrected_name": "Шумоглушитель ф125/900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель CSA 125/600",
+      "corrected_code": "000008518",
+      "corrected_name": "Шумоглушитель ф125/600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Клапан обратный RSK 125",
+      "corrected_code": "000012097",
+      "corrected_name": "Клапан обратный ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 160/200",
+      "corrected_code": "000003408",
+      "corrected_name": "Врезка ф160/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 500/300",
+      "corrected_code": "000000166",
+      "corrected_name": "Воздуховод 500х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уголок для фланцев 20",
+      "corrected_code": "48318",
+      "corrected_name": "Уголок 95х95х2,5",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут 160",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скотч алюминиевый",
+      "corrected_code": "45709",
+      "corrected_name": "Скотч алюминиевый",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Лента уплотнительная межфланцевая",
+      "corrected_code": "000015621",
+      "corrected_name": "Лента уплотнительная 5х10 (10м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Анкер м8",
+      "corrected_code": "000009190",
+      "corrected_name": "Анкер забивной латунный M8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Перчатки",
+      "corrected_code": "48808",
+      "corrected_name": "Перчатки х/б",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 315",
+      "corrected_code": "000000026",
+      "corrected_name": "Отвод 90 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ф160мм",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр Ф160мм",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ф100мм",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод Ф200мм",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр Ф100мм",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр Ф200мм",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник Ф200/100/200",
+      "corrected_code": "000002150",
+      "corrected_name": "Тройник ф200/ф100/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель клапан Ф100мм",
+      "corrected_code": "000003010",
+      "corrected_name": "Дроссель-клапан ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход Ф160/200",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель Ф200",
+      "corrected_code": "000008614",
+      "corrected_name": "Шумоглушитель ф200/600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Подвеска Ф100",
+      "corrected_code": "59304",
+      "corrected_name": "Хомут с гайкой М8/М10 ф100 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Подвеска Ф160",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Подвеска Ф200",
+      "corrected_code": "59307",
+      "corrected_name": "Хомут с гайкой М8/М10 ф200 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Нипель Ф160",
+      "corrected_code": "НФ-00013004",
+      "corrected_name": "Ниппель ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 400х150",
+      "corrected_code": "56165",
+      "corrected_name": "Ниппель 400х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 200х200",
+      "corrected_code": "000013686",
+      "corrected_name": "Ниппель 200х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 250х150",
+      "corrected_code": "44916",
+      "corrected_name": "Ниппель 250х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель ф160",
+      "corrected_code": "НФ-00013004",
+      "corrected_name": "Ниппель ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель ф125",
+      "corrected_code": "000000459",
+      "corrected_name": "Ниппель ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф100",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф125",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф250",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод оц. витой ф400",
+      "corrected_code": "000000016",
+      "corrected_name": "Воздуховод ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр ф125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр ф160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр ф200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка ф160",
+      "corrected_code": "000000292",
+      "corrected_name": "Заглушка ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка ф315",
+      "corrected_code": "000001068",
+      "corrected_name": "Заглушка ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 100/100",
+      "corrected_code": "000000443",
+      "corrected_name": "Тройник ф100/ф100/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 125/125",
+      "corrected_code": "000000742",
+      "corrected_name": "Тройник ф125/ф125/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 125/100",
+      "corrected_code": "000004333",
+      "corrected_name": "Тройник ф125/ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 160/100",
+      "corrected_code": "000004342",
+      "corrected_name": "Тройник ф160/ф100/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 160/160",
+      "corrected_code": "000000040",
+      "corrected_name": "Тройник ф160/ф160/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 200/160",
+      "corrected_code": "000006094",
+      "corrected_name": "Тройник ф200/ф160/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 200/200",
+      "corrected_code": "000000843",
+      "corrected_name": "Тройник ф200/ф200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 250/250",
+      "corrected_code": "000000842",
+      "corrected_name": "Тройник ф250/ф250/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 315/160",
+      "corrected_code": "000003104",
+      "corrected_name": "Тройник ф315/ф160/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник 315/200",
+      "corrected_code": "000005208",
+      "corrected_name": "Тройник ф315/ф200/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 125/100",
+      "corrected_code": "000000460",
+      "corrected_name": "Переход ф125/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 160/100",
+      "corrected_code": "000001069",
+      "corrected_name": "Переход ф160/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 160/125",
+      "corrected_code": "000003947",
+      "corrected_name": "Переход ф160/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 250/200",
+      "corrected_code": "000000037",
+      "corrected_name": "Переход ф250/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Жироуловитель 300х300",
+      "corrected_code": "48084",
+      "corrected_name": "Жироуловитель 300х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,7 ф400, L=3000, гк/гк",
+      "corrected_code": "66107",
+      "corrected_name": "Воздуховод ф400 0,7 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,7 ф450, L=3000, гк/гк",
+      "corrected_code": "000000017",
+      "corrected_name": "Воздуховод ф450",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,7 ф500, L=3000, гк/гк",
+      "corrected_code": "000000018",
+      "corrected_name": "Воздуховод ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,7 ф560, L=3000, гк/гк",
+      "corrected_code": "000002076",
+      "corrected_name": "Воздуховод ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,7 ф710, L=3000, гк/гк",
+      "corrected_code": "000000020",
+      "corrected_name": "Воздуховод ф710",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,8 ф800, L=3000, гк/гк",
+      "corrected_code": "61263",
+      "corrected_name": "Воздуховод ф800 0,8 мм",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод спирально-навивной оц.ст.0,9 ф1000, L=3000, гк/гк",
+      "corrected_code": "000002205",
+      "corrected_name": "Воздуховод ф1000",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка-седло оц.ст.0,7, ф710/ф710, L=100, нип/отб",
+      "corrected_code": "000008212",
+      "corrected_name": "Врезка ф710/ф710",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка-седло оц.ст.0,9, ф710/ф900, L=100, нип/отб",
+      "corrected_code": "000014799",
+      "corrected_name": "Врезка ф710/ф900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф450, L=100, нип/нип",
+      "corrected_code": "000000233",
+      "corrected_name": "Ниппель ф450",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф500, L=100, нип/нип",
+      "corrected_code": "000007656",
+      "corrected_name": "Ниппель ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф560, L=100, нип/нип",
+      "corrected_code": "000004920",
+      "corrected_name": "Ниппель ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф710, L=100, нип/нип",
+      "corrected_code": "000009548",
+      "corrected_name": "Ниппель ф710",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф800, L=100, нип/нип",
+      "corrected_code": "000001599",
+      "corrected_name": "Ниппель ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,7, ф900, L=110, нип/нип",
+      "corrected_code": "000006461",
+      "corrected_name": "Ниппель ф900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,9, ф1000, L=110, нип/нип",
+      "corrected_code": "000001598",
+      "corrected_name": "Ниппель ф1000",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,9, ф1120, L=110, нип/нип",
+      "corrected_code": "000011931",
+      "corrected_name": "Ниппель ф1120",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель оц.ст.0,9, ф1250, L=110, нип/нип",
+      "corrected_code": "000008900",
+      "corrected_name": "Ниппель ф1250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод оц.ст.0,7, ф560, 90град., 4-сегм, нип/нип",
+      "corrected_code": "000002072",
+      "corrected_name": "Отвод 90 ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод оц.ст.0,7, ф710, 90град., 4-сегм, нип/нип",
+      "corrected_code": "000000024",
+      "corrected_name": "Отвод 90 ф710",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф500/ф400, СТД, Исп.1, нип/нип",
+      "corrected_code": "000000033",
+      "corrected_name": "Переход ф500/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф450/ф400, СТД, Исп.1, нип/нип",
+      "corrected_code": "000000214",
+      "corrected_name": "Переход ф450/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф560/ф400, СТД, Исп.1, нип/нип",
+      "corrected_code": "НФ-00000125",
+      "corrected_name": "Переход ф560/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф560/ф450, СТД, Исп.1, нип/нип",
+      "corrected_code": "НФ-00000190",
+      "corrected_name": "Переход ф560/ф450",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф560/ф500, СТД, Исп.1, нип/нип",
+      "corrected_code": "НФ-00000130",
+      "corrected_name": "Переход ф560/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф710/ф500, СТД, Исп.1, нип/нип",
+      "corrected_code": "000004659",
+      "corrected_name": "Переход ф710/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф710/ф560, СТД, Исп.1, нип/нип",
+      "corrected_code": "000004658",
+      "corrected_name": "Переход ф710/ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход оц.ст.0,7, ф800/ф710, СТД, Исп.1, нип/нип",
+      "corrected_code": "000011339",
+      "corrected_name": "Переход ф800/ф710",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод круглый 800х3000",
+      "corrected_code": "000000326",
+      "corrected_name": "Воздуховод ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка круг 800",
+      "corrected_code": "000001595",
+      "corrected_name": "Заглушка ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод круглый 90 800",
+      "corrected_code": "000000331",
+      "corrected_name": "Отвод 90 ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Фланец круглый 800",
+      "corrected_code": "000003092",
+      "corrected_name": "Фланец ф800",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт круглый ф125",
+      "corrected_code": "000002512",
+      "corrected_name": "Зонт круглый ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Труба Д200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод д100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод д125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод д160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод д200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник д200",
+      "corrected_code": "000000843",
+      "corrected_name": "Тройник ф200/ф200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход д200/д160",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка д100 в д200",
+      "corrected_code": "000004286",
+      "corrected_name": "Врезка ф100/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка д125 в д200",
+      "corrected_code": "000000228",
+      "corrected_name": "Врезка ф125/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель д125",
+      "corrected_code": "000000459",
+      "corrected_name": "Ниппель ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель д160",
+      "corrected_code": "НФ-00013004",
+      "corrected_name": "Ниппель ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель д200",
+      "corrected_code": "000000235",
+      "corrected_name": "Ниппель ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шибер 315",
+      "corrected_code": "000001825",
+      "corrected_name": "Шибер ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шибер 250",
+      "corrected_code": "000001873",
+      "corrected_name": "Шибер ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Пристеный вытяжной зонт без Ж/у 1500x700  H 300",
+      "corrected_code": "НФ-00046656",
+      "corrected_name": "Зонт ЗВП-1 1500х700, h=300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Пристеный вытяжной зонт без   без Ж/у  1700x700 H 350",
+      "corrected_code": "НФ-00007697",
+      "corrected_name": "Зонт ЗВП-1 1700х700, h=350",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 250",
+      "corrected_code": "000002303",
+      "corrected_name": "Врезка прямая ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая 315",
+      "corrected_code": "000003944",
+      "corrected_name": "Врезка прямая ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уголок для еврошины 20",
+      "corrected_code": "48318",
+      "corrected_name": "Уголок 95х95х2,5",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скоба зажимная",
+      "corrected_code": "77270",
+      "corrected_name": "Скоба для фланцев",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 500х300",
+      "corrected_code": "000004908",
+      "corrected_name": "Отвод 90 500х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 500х300",
+      "corrected_code": "000000166",
+      "corrected_name": "Воздуховод 500х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздузовод 200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "полуотвод 700х400",
+      "corrected_code": "000007286",
+      "corrected_name": "Отвод 45 700х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 400х700",
+      "corrected_code": "000005542",
+      "corrected_name": "Отвод 90 400х700",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "полуотвод 100",
+      "corrected_code": "000001535",
+      "corrected_name": "Отвод 45 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка 100 в 100",
+      "corrected_code": "000003433",
+      "corrected_name": "Врезка ф100/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод 200",
+      "corrected_code": "000001741",
+      "corrected_name": "Отвод 45 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка наружная некрашенная 500х500",
+      "corrected_code": "000008968",
+      "corrected_name": "Наружная решетка 500х500(h)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 125/600",
+      "corrected_code": "000008518",
+      "corrected_name": "Шумоглушитель ф125/600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 125/900",
+      "corrected_code": "000008519",
+      "corrected_name": "Шумоглушитель ф125/900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 125",
+      "corrected_code": "000000459",
+      "corrected_name": "Ниппель ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод 125",
+      "corrected_code": "000001834",
+      "corrected_name": "Отвод 45 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 160/900",
+      "corrected_code": "000007619",
+      "corrected_name": "Шумоглушитель ф160/900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод 160",
+      "corrected_code": "000001742",
+      "corrected_name": "Отвод 45 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 200/600",
+      "corrected_code": "000008614",
+      "corrected_name": "Шумоглушитель ф200/600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Глушитель 200/900",
+      "corrected_code": "000009552",
+      "corrected_name": "Шумоглушитель ф200/900",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 250",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 250",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 250 на 315",
+      "corrected_code": "000000036",
+      "corrected_name": "Переход ф315/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 315",
+      "corrected_code": "000000014",
+      "corrected_name": "Воздуховод ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 315",
+      "corrected_code": "000001458",
+      "corrected_name": "Ниппель ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод 315",
+      "corrected_code": "000002351",
+      "corrected_name": "Отвод 45 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 355",
+      "corrected_code": "000000015",
+      "corrected_name": "Воздуховод ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель 355",
+      "corrected_code": "000000234",
+      "corrected_name": "Ниппель ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 355",
+      "corrected_code": "000000022",
+      "corrected_name": "Отвод 90 ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод 355",
+      "corrected_code": "000005621",
+      "corrected_name": "Отвод 45 ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут вентиляционный ф160",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 д160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45 д160",
+      "corrected_code": "000001742",
+      "corrected_name": "Отвод 45 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод д160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка стакан д160",
+      "corrected_code": "000001836",
+      "corrected_name": "Врезка прямая ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка д160/160",
+      "corrected_code": "000001242",
+      "corrected_name": "Врезка ф160/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Диф фузор универсальный ДПУ-М 125",
+      "corrected_code": "53838",
+      "corrected_name": "Диффузор универсальный PAV-B 125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Диф фузор универсальный ДПУ-М160",
+      "corrected_code": "53835",
+      "corrected_name": "Диффузор универсальный PAV-B 160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Диф фузор универсальный ДПУ-М 200",
+      "corrected_code": "53836",
+      "corrected_name": "Диффузор универсальный PAV-B 200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Засл онка регулируемая DKR125",
+      "corrected_code": "000000665",
+      "corrected_name": "Дроссель-клапан ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Засл онка регулируемая DKR160",
+      "corrected_code": "000000961",
+      "corrected_name": "Дроссель-клапан ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Засл онка регулируемая DKR200",
+      "corrected_code": "000000664",
+      "corrected_name": "Дроссель-клапан ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духоводы из листовой оцинкованной стали толщиной 0,5 мм ф 125 мм",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духовод из листовой оцинкованной стали Ф160мм б=0,5 мм",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духоводы из листовой оцинкованной стали толщиной 0,5 мм ф 200 мм",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духоводы из листовой оцинкованной стали толщиной 0,5 мм ф 250",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духовод из листовой оцинкованной стали Ф315мм б=0,6 мм",
+      "corrected_code": "000000014",
+      "corrected_name": "Воздуховод ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духовод из листовой оцинкованной стали Ф400мм б=0,6 мм",
+      "corrected_code": "000000016",
+      "corrected_name": "Воздуховод ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духовод из листовой оцинкованной стали Ф500мм б=0,6 мм",
+      "corrected_code": "000000018",
+      "corrected_name": "Воздуховод ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воз духовод из листовой оцинкованной стали Ф560мм б=0,7 мм",
+      "corrected_code": "000002076",
+      "corrected_name": "Воздуховод ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гибк ий воздуховод Ф125",
+      "corrected_code": "000003677",
+      "corrected_name": "Воздуховод гибкий ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гибк ий воздуховод Ф160",
+      "corrected_code": "000003663",
+      "corrected_name": "Воздуховод гибкий ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гибк ий воздуховод Ф200",
+      "corrected_code": "000004155",
+      "corrected_name": "Воздуховод гибкий ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр боковой 600х400",
+      "corrected_code": "000000256",
+      "corrected_name": "Отвод 90 600х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр боковой 400х200",
+      "corrected_code": "000003380",
+      "corrected_name": "Отвод 90 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр прямой 600х400",
+      "corrected_code": "000005637",
+      "corrected_name": "Отвод 90 400х600",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр прямой 400х200",
+      "corrected_code": "47492",
+      "corrected_name": "Отвод 90 200х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 45 гр 300х200",
+      "corrected_code": "000009010",
+      "corrected_name": "Отвод 45 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 45 гр ф100",
+      "corrected_code": "000001535",
+      "corrected_name": "Отвод 45 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр ф100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф250",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф315",
+      "corrected_code": "000000026",
+      "corrected_name": "Отвод 90 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф400",
+      "corrected_code": "000000025",
+      "corrected_name": "Отвод 90 ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф500",
+      "corrected_code": "000000222",
+      "corrected_name": "Отвод 90 ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "отвод 90 гр. Ф560",
+      "corrected_code": "000002072",
+      "corrected_name": "Отвод 90 ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф100 в ф200",
+      "corrected_code": "000004286",
+      "corrected_name": "Врезка ф100/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф100 в ф125",
+      "corrected_code": "000004078",
+      "corrected_name": "Врезка ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф100 в ф160",
+      "corrected_code": "000004913",
+      "corrected_name": "Врезка ф100/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф160 в ф250",
+      "corrected_code": "000003141",
+      "corrected_name": "Врезка ф160/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф160 в ф200",
+      "corrected_code": "000003408",
+      "corrected_name": "Врезка ф160/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф250",
+      "corrected_code": "000002292",
+      "corrected_name": "Врезка ф125/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф160",
+      "corrected_code": "000002291",
+      "corrected_name": "Врезка ф125/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф200",
+      "corrected_code": "000000228",
+      "corrected_name": "Врезка ф125/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф315",
+      "corrected_code": "000005050",
+      "corrected_name": "Врезка ф125/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф400",
+      "corrected_code": "000006861",
+      "corrected_name": "Врезка ф125/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка 200х100 в ф100",
+      "corrected_code": "000006230",
+      "corrected_name": "Врезка 200х100/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф200 в 300х200",
+      "corrected_code": "НФ-00000022",
+      "corrected_name": "Врезка 300х200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф125 в ф125",
+      "corrected_code": "000003717",
+      "corrected_name": "Врезка ф125/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф160 в ф400",
+      "corrected_code": "000004115",
+      "corrected_name": "Врезка ф160/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф160 в ф315",
+      "corrected_code": "000005143",
+      "corrected_name": "Врезка ф160/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф250 в ф315",
+      "corrected_code": "000004056",
+      "corrected_name": "Врезка ф250/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф200 в ф500",
+      "corrected_code": "000004928",
+      "corrected_name": "Врезка ф200/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка прямая ф125",
+      "corrected_code": "000001835",
+      "corrected_name": "Врезка прямая ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка прямая ф160",
+      "corrected_code": "000001836",
+      "corrected_name": "Врезка прямая ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф160 х ф100",
+      "corrected_code": "000001069",
+      "corrected_name": "Переход ф160/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф125 х ф100",
+      "corrected_code": "000000460",
+      "corrected_name": "Переход ф125/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф200 х ф125",
+      "corrected_code": "000000840",
+      "corrected_name": "Переход ф200/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф160 х ф125",
+      "corrected_code": "000003947",
+      "corrected_name": "Переход ф160/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф160 х ф200",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф160 х ф250",
+      "corrected_code": "000000344",
+      "corrected_name": "Переход ф250/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф315 х ф400",
+      "corrected_code": "000000032",
+      "corrected_name": "Переход ф400/ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф560 х ф400",
+      "corrected_code": "НФ-00000125",
+      "corrected_name": "Переход ф560/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф250 х ф315",
+      "corrected_code": "000000036",
+      "corrected_name": "Переход ф315/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф250 х ф200",
+      "corrected_code": "000000037",
+      "corrected_name": "Переход ф250/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф315 х ф200",
+      "corrected_code": "000002190",
+      "corrected_name": "Переход ф315/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф500 х ф400",
+      "corrected_code": "000000033",
+      "corrected_name": "Переход ф500/ф400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф200 х ф160",
+      "corrected_code": "000000193",
+      "corrected_name": "Переход ф200/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф560 на 1200х700",
+      "corrected_code": "НФ-00052858",
+      "corrected_name": "Переход  1200х700 на ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 500х300 на 400х200",
+      "corrected_code": "000004302",
+      "corrected_name": "Переход 500х300 на 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 600х400 на 400х200",
+      "corrected_code": "41393",
+      "corrected_name": "Переход 600х400 на 400х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 300х200 на 300х150",
+      "corrected_code": "000009217",
+      "corrected_name": "Переход 300х200 на 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 400х200 на 300х200",
+      "corrected_code": "000004689",
+      "corrected_name": "Переход 400х200 на 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 300х150 на ф160",
+      "corrected_code": "000003114",
+      "corrected_name": "Переход 300х150 на ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 200х100 на ф100",
+      "corrected_code": "000004299",
+      "corrected_name": "Переход 200х100 на ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход 300х200 на ф200",
+      "corrected_code": "000007305",
+      "corrected_name": "Переход 300х200 на ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф160 хф100 хф125",
+      "corrected_code": "НФ-00043738",
+      "corrected_name": "Тройник ф160/ф100/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф125 х ф125 х ф125",
+      "corrected_code": "000000742",
+      "corrected_name": "Тройник ф125/ф125/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф160хф125хф100",
+      "corrected_code": "57211",
+      "corrected_name": "Тройник ф160/ф125/ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф200хф200хф200",
+      "corrected_code": "000000843",
+      "corrected_name": "Тройник ф200/ф200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф560хф560хф560",
+      "corrected_code": "49123",
+      "corrected_name": "Тройник ф560/ф560/ф560",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "тройник ф500хф400хф500",
+      "corrected_code": "000002578",
+      "corrected_name": "Тройник ф500/ф400/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Нар ужная решетка АРН 1200х700",
+      "corrected_code": "000013337",
+      "corrected_name": "Наружная решетка АРН 1200х700",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "решетка АМН 300х200",
+      "corrected_code": "000006295",
+      "corrected_name": "Решетка вентиляционная алюминиевая АМН 300х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "кровельный зонт ф500",
+      "corrected_code": "000000197",
+      "corrected_name": "Зонт круглый ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "люк для замера воздуха ЛП",
+      "corrected_code": "60696",
+      "corrected_name": "Лючок для замера параметров воздуха Л3",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "врезка ф200 в ф250",
+      "corrected_code": "000004921",
+      "corrected_name": "Врезка ф200/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "переход ф250 на 500х400",
+      "corrected_code": "000013541",
+      "corrected_name": "Переход 500х400 на ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Нар ужная решетка АРН 500х400",
+      "corrected_code": "000012420",
+      "corrected_name": "Наружная решетка АРН 500х400",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "кровельный зонт ф250",
+      "corrected_code": "000000924",
+      "corrected_name": "Зонт круглый ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "струбцина монтажная М8",
+      "corrected_code": "000014871",
+      "corrected_name": "Струбцина М8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф100 М8, боковой винт",
+      "corrected_code": "59304",
+      "corrected_name": "Хомут с гайкой М8/М10 ф100 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф125 М8, боковой винт",
+      "corrected_code": "59305",
+      "corrected_name": "Хомут с гайкой М8/М10 ф125 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф160 М8, боковой винт",
+      "corrected_code": "59306",
+      "corrected_name": "Хомут с гайкой М8/М10 ф160 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф200 М8, боковой винт",
+      "corrected_code": "59307",
+      "corrected_name": "Хомут с гайкой М8/М10 ф200 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф250 М8, боковой винт",
+      "corrected_code": "59308",
+      "corrected_name": "Хомут с гайкой М8/М10 ф250 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф315 М8, боковой винт",
+      "corrected_code": "59309",
+      "corrected_name": "Хомут с гайкой М8/М10 ф315 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф400 М8, боковой винт",
+      "corrected_code": "59310",
+      "corrected_name": "Хомут с гайкой М8/10 ф400 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф500 М8, боковой винт",
+      "corrected_code": "59311",
+      "corrected_name": "Хомут с гайкой М8/М10 ф500 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "хомут вентиляционный с резиновым уплотнителем ф560 М8, боковой винт",
+      "corrected_code": "59680",
+      "corrected_name": "Хомут с гайкой М8/М10 ф560 с резиновым уплотнением",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "шпилька М8  L=2000",
+      "corrected_code": "000004914",
+      "corrected_name": "Шпилька М8 (2000мм)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "соединитель М8",
+      "corrected_code": "000012254",
+      "corrected_name": "Муфта М8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "болт М8 30 мм",
+      "corrected_code": "000009049",
+      "corrected_name": "Болт М8х30",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "шайба М8 х24  мм",
+      "corrected_code": "000010526",
+      "corrected_name": "Шайба кузовная ф8",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "шайба М8 х16  мм",
+      "corrected_code": "59517",
+      "corrected_name": "Шайба ф8 (не кузовная)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 гр ф315",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут забивной стальной на арматура ф315",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 220х220/ф315",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Тройник ф100",
+      "corrected_code": "000000026",
+      "corrected_name": "Отвод 90 ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр ф100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонд ф100",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф100",
+      "corrected_code": "000007409",
+      "corrected_name": "Хомут со штырем ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Хомут оцинкованный с резиновым уплотнением ф100",
+      "corrected_code": "НФ-00000316",
+      "corrected_name": "Переход 220х220 на ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход ф200/ф250",
+      "corrected_code": "000000037",
+      "corrected_name": "Переход ф250/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан ф125",
+      "corrected_code": "000000665",
+      "corrected_name": "Дроссель-клапан ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан ф100",
+      "corrected_code": "000003010",
+      "corrected_name": "Дроссель-клапан ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф125/ф250",
+      "corrected_code": "000002292",
+      "corrected_name": "Врезка ф125/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф125/ф200",
+      "corrected_code": "000000228",
+      "corrected_name": "Врезка ф125/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф100/ф160",
+      "corrected_code": "000004913",
+      "corrected_name": "Врезка ф100/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф100/ф200",
+      "corrected_code": "000004286",
+      "corrected_name": "Врезка ф100/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка круглая ф100/ф250",
+      "corrected_code": "000003650",
+      "corrected_name": "Врезка ф100/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали класса герметичности А, δ=0,5 мм, ⌀100",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали класса герметичности А, δ=0,5 мм, ⌀125",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали класса герметичности А, δ=0,5 мм, ⌀160",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод из тонколистовой оцинкованной стали класса герметичности А, δ=0,5 мм, ⌀200",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45°, 100",
+      "corrected_code": "000001535",
+      "corrected_name": "Отвод 45 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90°, 100",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90°, 125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45°, 160",
+      "corrected_code": "000001742",
+      "corrected_name": "Отвод 45 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90°, 160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90°, 200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45°, 100х200",
+      "corrected_code": "000006025",
+      "corrected_name": "Отвод 45 100х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90°, 200х100",
+      "corrected_code": "000002982",
+      "corrected_name": "Отвод 90 200х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45°, 150х300",
+      "corrected_code": "000007963",
+      "corrected_name": "Отвод 45 150х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 125 - 200х100",
+      "corrected_code": "000004906",
+      "corrected_name": "Переход 200х100 на ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 125 - 200",
+      "corrected_code": "000000840",
+      "corrected_name": "Переход ф200/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 200 - 300х150",
+      "corrected_code": "000004470",
+      "corrected_name": "Переход 300х150 на ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямая d100",
+      "corrected_code": "000003084",
+      "corrected_name": "Врезка прямая ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка седло 200-200",
+      "corrected_code": "000001241",
+      "corrected_name": "Врезка ф200/ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 300х150, нержавеющая сталь",
+      "corrected_code": "000002069",
+      "corrected_name": "Отвод 90 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод 300*100",
+      "corrected_code": "000005048",
+      "corrected_name": "Воздуховод 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90 300*100",
+      "corrected_code": "000005634",
+      "corrected_name": "Отвод 90 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход 150*150/ф125",
+      "corrected_code": "000001650",
+      "corrected_name": "Переход 150х150 на ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф100/плоскость",
+      "corrected_code": "000003084",
+      "corrected_name": "Врезка прямая ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка ф125/плоскость",
+      "corrected_code": "000001835",
+      "corrected_name": "Врезка прямая ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гофра ф100 (утепленная)",
+      "corrected_code": "53622",
+      "corrected_name": "Воздуховод гибкий IZO 102 10м",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гофра ф125 (утепленная)",
+      "corrected_code": "53623",
+      "corrected_name": "Воздуховод гибкий IZO 127 10м",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скотч алюминиевый 50мм",
+      "corrected_code": "45709",
+      "corrected_name": "Скотч алюминиевый",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Саморез с буром 4.2*1.6",
+      "corrected_code": "60951",
+      "corrected_name": "Саморез 4,2х16 с буром",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод ф700*150",
+      "corrected_code": "000004133",
+      "corrected_name": "Воздуховод 700х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт d500 оц.0,5 нип",
+      "corrected_code": "000000197",
+      "corrected_name": "Зонт круглый ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан d250 оц.0,5 нип/нип",
+      "corrected_code": "000000962",
+      "corrected_name": "Дроссель-клапан ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан d355 оц.0,5 нип/нип",
+      "corrected_code": "000002007",
+      "corrected_name": "Дроссель-клапан ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан d500 оц.0,7 нип/нип",
+      "corrected_code": "000000054",
+      "corrected_name": "Дроссель-клапан ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н d250 оц.0,5",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н d355 оц.0,5",
+      "corrected_code": "000000015",
+      "corrected_name": "Воздуховод ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод с-н d500 оц.0,5",
+      "corrected_code": "000000018",
+      "corrected_name": "Воздуховод ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 15град. d355 оц.0,5 нип/нип 2-сегм-й",
+      "corrected_code": "НФ-00009115",
+      "corrected_name": "Отвод 15 ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 45град. d250 оц.0,5 нип/нип 2-сегм-й",
+      "corrected_code": "000001038",
+      "corrected_name": "Отвод 45 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. d250 оц.0,5 нип/нип 3-сегм-й",
+      "corrected_code": "000000301",
+      "corrected_name": "Отвод 90 ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. d355 оц.0,5 нип/нип 4-сегм-й",
+      "corrected_code": "000000022",
+      "corrected_name": "Отвод 90 ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90град. d500 оц.0,5 нип/нип 4-сегм-й",
+      "corrected_code": "000000222",
+      "corrected_name": "Отвод 90 ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка седло d355/d250 оц.0,5 нип",
+      "corrected_code": "000005798",
+      "corrected_name": "Врезка ф250/ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка седло d500/d250 оц.0,5 нип",
+      "corrected_code": "000003016",
+      "corrected_name": "Врезка ф250/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка седло d500/d355 оц.0,5 нип",
+      "corrected_code": "000006314",
+      "corrected_name": "Врезка ф355/ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход d355/d250 оц.0,5 нип/нип",
+      "corrected_code": "000004661",
+      "corrected_name": "Переход ф355/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход d500/d355 оц.0,5 нип/нип",
+      "corrected_code": "000000287",
+      "corrected_name": "Переход ф500/ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход d355/225*225 оц.0,5 нип/ш20",
+      "corrected_code": "НФ-00052312",
+      "corrected_name": "Переход 225х225 на ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель d250 оц.0,5",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель d355 оц.0,5",
+      "corrected_code": "000000234",
+      "corrected_name": "Ниппель ф355",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель d500 оц.0,5",
+      "corrected_code": "000007656",
+      "corrected_name": "Ниппель ф500",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Ниппель круглый D250",
+      "corrected_code": "000003346",
+      "corrected_name": "Ниппель ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка в круглое сечение D160 в 250",
+      "corrected_code": "000003141",
+      "corrected_name": "Врезка ф160/ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с круглого сечения на круглое 250/160",
+      "corrected_code": "000000344",
+      "corrected_name": "Переход ф250/ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с прямоугольного сечения на круглое250/175x175 (195x195 по фланцам)",
+      "corrected_code": "НФ-00000731",
+      "corrected_name": "Переход 175х175 на ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Зонт круглый D250",
+      "corrected_code": "000000924",
+      "corrected_name": "Зонт круглый ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый D160",
+      "corrected_code": "000000961",
+      "corrected_name": "Дроссель-клапан ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход с прямоугольного сечения на круглое D315/300x150",
+      "corrected_code": "000016241",
+      "corrected_name": "Переход 300х150 на ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод прямоугольный 300x150 (1.5 п.м.)",
+      "corrected_code": "000004132",
+      "corrected_name": "Воздуховод 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Фланец 300х150",
+      "corrected_code": "000014395",
+      "corrected_name": "Фланец 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольный вертикальный 45 гр. 150х300",
+      "corrected_code": "000007963",
+      "corrected_name": "Отвод 45 150х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольный вертикальный 90 гр. 150х300",
+      "corrected_code": "000008300",
+      "corrected_name": "Отвод 90 150х300",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод прямоугольный горизонтальный 90 гр. 300х150",
+      "corrected_code": "000002069",
+      "corrected_name": "Отвод 90 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка прямоугольная 300х150",
+      "corrected_code": "000006159",
+      "corrected_name": "Заглушка 300х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Решетка прямоугольная внутренняя 200х150",
+      "corrected_code": "000001712",
+      "corrected_name": "Решетка однорядная регулируемая RAG 200х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр 125",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр 160",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод 90гр 200",
+      "corrected_code": "000000023",
+      "corrected_name": "Отвод 90 ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гибкий воздуховод неизолированый 100мм",
+      "corrected_code": "000003676",
+      "corrected_name": "Воздуховод гибкий ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гибкий воздуховод неизолированый 250мм",
+      "corrected_code": "000004037",
+      "corrected_name": "Воздуховод гибкий ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Диффузор пластиковый DVA 100 мм",
+      "corrected_code": "53839",
+      "corrected_name": "Диффузор универсальный PAV-B 100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Диффузор пластиковый DVA 250 мм",
+      "corrected_code": "53837",
+      "corrected_name": "Диффузор универсальный PAV-B 250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Двухрядная решетка АДР 500x100 с регулятором расхода воздуха",
+      "corrected_code": "54584",
+      "corrected_name": "Решетка вентиляционная алюминиевая АДР 500х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Двухрядная решетка АДР 400x100 с регулятором расхода воздуха",
+      "corrected_code": "000005039",
+      "corrected_name": "Решетка вентиляционная алюминиевая АДР 400х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Двухрядная решетка АДР 300x100 с регулятором расхода воздуха",
+      "corrected_code": "000006536",
+      "corrected_name": "Решетка вентиляционная алюминиевая АДР 300х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Двухрядная решетка АДР 200x100 с регулятором расхода воздуха",
+      "corrected_code": "000000817",
+      "corrected_name": "Решетка вентиляционная алюминиевая АДР 200х100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый БЕЗ рез.упл. ф100 ручной.",
+      "corrected_code": "000003010",
+      "corrected_name": "Дроссель-клапан ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый БЕЗ рез.упл. ф160 ручной",
+      "corrected_code": "000000961",
+      "corrected_name": "Дроссель-клапан ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый БЕЗ рез.упл. ф200 ручной.",
+      "corrected_code": "000000664",
+      "corrected_name": "Дроссель-клапан ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый БЕЗ рез.упл. ф250 ручной.",
+      "corrected_code": "000000962",
+      "corrected_name": "Дроссель-клапан ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Дроссель-клапан круглый БЕЗ рез.упл. ф315 ручной",
+      "corrected_code": "000000884",
+      "corrected_name": "Дроссель-клапан ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход прямоугольное сечение 500x100 мм на круглое сечение 315 мм (односторонний, тип 5), 0.7 мм, L=300 мм",
+      "corrected_code": "59375",
+      "corrected_name": "Переход 500х100 на ф315",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход прямоугольное сечение 200x100 мм на круглое сечение 160 мм (односторонний, тип 5), 0.7 мм, L=300 мм",
+      "corrected_code": "000006773",
+      "corrected_name": "Переход 200х100 на ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Спиральный воздуховод d 100 L-1500 [нп] (оцинкованная сталь 0,5 мм)",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Спиральный воздуховод d 160 L-1500 [нп] (оцинкованная сталь 0,5 мм)",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Спиральный воздуховод d 200 L-1500 [нп] (оцинкованная сталь 0,5 мм)",
+      "corrected_code": "000000013",
+      "corrected_name": "Воздуховод ф200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Спиральный воздуховод d 250 L-1500 [нп] (оцинкованная сталь 0,5 мм)",
+      "corrected_code": "000000303",
+      "corrected_name": "Воздуховод ф250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Алюминиевая клейкая лента X-Glass 50 мм, 50 м 160374",
+      "corrected_code": "45709",
+      "corrected_name": "Скотч алюминиевый",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Саморезы с прессшайбой острые 4,2 х 13 мм",
+      "corrected_code": "000011590",
+      "corrected_name": "Саморез металл-металл с пресс-шайбой 4,2х13 остроконечный",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод d125*3000мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000011",
+      "corrected_name": "Воздуховод ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод d100*3000мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000010",
+      "corrected_name": "Воздуховод ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Воздуховод d160*1000мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000012",
+      "corrected_name": "Воздуховод ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка для воздузовода 250*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000007838",
+      "corrected_name": "Заглушка 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Заглушка для воздузовода 200*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000002450",
+      "corrected_name": "Заглушка 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход воздуховода 250*200/200*60мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "НФ-00047378",
+      "corrected_name": "Переход 250х200 на 200х60",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход воздуховода 150*200/200*60мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "НФ-00047379",
+      "corrected_name": "Переход 200х150 на 60х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Переход воздуховода d 125/200*60мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "НФ-00005866",
+      "corrected_name": "Переход 200х60 на ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" 250*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000004692",
+      "corrected_name": "Отвод 90 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" 200*250мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000006208",
+      "corrected_name": "Отвод 90 200х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" 200*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000725",
+      "corrected_name": "Отвод 90 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" 200*150мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000006218",
+      "corrected_name": "Отвод 90 200х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" d125мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000229",
+      "corrected_name": "Отвод 90 ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" d160мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000001064",
+      "corrected_name": "Отвод 90 ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 90\" d100мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000000302",
+      "corrected_name": "Отвод 90 ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 45\" 250*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000001838",
+      "corrected_name": "Отвод 45 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 45\" 200*250мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000009647",
+      "corrected_name": "Отвод 45 200х250",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 45\" 200*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000007014",
+      "corrected_name": "Отвод 45 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Отвод воздуховода 45\" 150*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000009007",
+      "corrected_name": "Отвод 45 150х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 250*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000005901",
+      "corrected_name": "Врезка прямая 250х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 200*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000004565",
+      "corrected_name": "Врезка прямая 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная 200*150мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000006892",
+      "corrected_name": "Врезка прямая 200х150",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная d125мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000001835",
+      "corrected_name": "Врезка прямая ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка прямоугольная d160мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000001836",
+      "corrected_name": "Врезка прямая ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Врезка d125-d125мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000003717",
+      "corrected_name": "Врезка ф125/ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гофра d125мм",
+      "corrected_code": "000003677",
+      "corrected_name": "Воздуховод гибкий ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гофра d160мм",
+      "corrected_code": "000003663",
+      "corrected_name": "Воздуховод гибкий ф160",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Гофра d100мм",
+      "corrected_code": "000003676",
+      "corrected_name": "Воздуховод гибкий ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Перфолента монтажная М8 (бухта 50м.п.)",
+      "corrected_code": "000002329",
+      "corrected_name": "Лента перфорированная 20х0.7 (25м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уплотнительная лента( бухта)",
+      "corrected_code": "000015621",
+      "corrected_name": "Лента уплотнительная 5х10 (10м)",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Герметик силиконовый",
+      "corrected_code": "47829",
+      "corrected_name": "Герметик силиконовый",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шина монтажная",
+      "corrected_code": "000002984",
+      "corrected_name": "Шина №20",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Уголки к шине",
+      "corrected_code": "48310",
+      "corrected_name": "Уголок 65х65х2,5",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Скобы к шине",
+      "corrected_code": "77270",
+      "corrected_name": "Скоба для фланцев",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Арктос Воздушный клапан Арктос КВК-125М",
+      "corrected_code": "000000665",
+      "corrected_name": "Дроссель-клапан ф125",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Арктос Воздушный клапан Арктос КВК-100М",
+      "corrected_code": "000003010",
+      "corrected_name": "Дроссель-клапан ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Клапан обратный RSK 100",
+      "corrected_code": "000015538",
+      "corrected_name": "Клапан обратный ф100",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Полуотвод воздуховода 200*200мм (оцинкованная сталь 0,55 мм)",
+      "corrected_code": "000007014",
+      "corrected_name": "Отвод 45 200х200",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    },
+    {
+      "original_name": "Шумоглушитель 200*200*1000мм",
+      "corrected_code": "000011905",
+      "corrected_name": "Шумоглушитель 200х200/1000",
+      "corrected_unit": "",
+      "timestamp": "2026-04-08T15:13:39.207474"
+    }
+  ]
+}

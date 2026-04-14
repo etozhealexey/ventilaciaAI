@@ -1,0 +1,2263 @@
+{
+  "examples": [
+    {
+      "original_name": "Воздуховод",
+      "matched_code": "000012707",
+      "matched_name": "Гибкий воздуховод Aludec 100",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T10:44:37.917747",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": null,
+      "matched_name": null,
+      "matched_unit": null,
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:16.465656",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:23.846080",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "НФ-00009902",
+      "matched_name": "Переход 900х700 на 900х450",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:25.375983",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:26.376910",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:27.395545",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:28.400816",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:29.542679",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:30.744597",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0,
+      "timestamp": "2026-02-09T11:25:31.481917",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:32.297975",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф125-70 б=0.5мм )",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:33.095937",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0.5,
+      "timestamp": "2026-02-09T11:25:34.053780",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0,
+      "timestamp": "2026-02-09T11:25:34.817251",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.6,
+      "timestamp": "2026-02-09T11:25:35.631215",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф315/Ф250-100 б=0.5мм )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:36.517401",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф400/Ф200-300 б=0.5мм )",
+      "matched_code": "НФ-00042908",
+      "matched_name": "Переход 520х520 на 300х300",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:37.447501",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф100/Ф160-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.6,
+      "timestamp": "2026-02-09T11:25:38.250561",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф160/Ф200-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:39.185182",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (300x200-1500 б=0.5мм Ш20)",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0,
+      "timestamp": "2026-02-09T11:25:41.385141",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0,
+      "timestamp": "2026-02-09T11:25:42.297015",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": null,
+      "matched_unit": null,
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:43.915271",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (300x200-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "НФ-00023723",
+      "matched_name": "Отвод 90 500х2000.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:46.168943",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:47.859403",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:48.868480",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:25:49.741174",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "нет_подходящего_кода",
+      "matched_name": "нет_подходящей_позиции",
+      "matched_unit": "",
+      "confidence": 0,
+      "timestamp": "2026-02-09T11:25:50.610262",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "47930",
+      "matched_name": "Переход 900х250 на 600х200",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:25:51.398784",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:33.892797",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:34.626267",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:35.405850",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф100-90-100 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:36.208531",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:36.998735",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:37.876366",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:38.670013",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-45-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:27:41.416456",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:42.214070",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-45-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:27:43.031615",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:43.823079",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:27:44.854425",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:27:45.862038",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:27:46.867540",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:27:47.858376",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:48.835609",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:27:49.652386",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:27:50.500009",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф125-70 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:51.264356",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:52.189351",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:27:52.938270",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:53.848995",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф315/Ф250-100 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:54.741334",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф100/Ф160-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:56.185624",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф160/Ф200-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:57.139388",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф100-20 б=0.5мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:57.893248",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф500-20  б=0.7мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:27:58.712995",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00040181",
+      "matched_name": "Фланец ф540.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:00.671428",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (600x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:01.552484",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "64348",
+      "matched_name": "Воздуховод 850х350",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:02.352823",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (400x400-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:03.180138",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x400-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:04.172247",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:06.257628",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:07.118523",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:08.012241",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:08.941980",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "50223",
+      "matched_name": "Переход 900х300 на 600х500",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:28:09.867782",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T11:30:38.119118",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:39.166739",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "НФ-00032948",
+      "matched_name": "Воздуховод 585х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:40.153620",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:41.168255",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:30:42.949098",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:43.758896",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:45.028554",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф315-90-315 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:45.939614",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-90-500  б=0.7мм )",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:46.791102",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-45-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:30:47.779914",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:30:50.017229",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-45-500  б=0.7мм )",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:51.049870",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:51.825565",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "50837",
+      "matched_name": "Тройник 500х400/ф315",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:52.833274",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "50837",
+      "matched_name": "Тройник 500х400/ф315",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:53.727273",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:30:54.748338",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:30:55.800131",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "50837",
+      "matched_name": "Тройник 500х400/ф315",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:56.690134",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:57.737198",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:30:58.785643",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:00.257935",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:01.315997",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:02.288453",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф400/Ф200-300 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:03.912524",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф500-20  б=0.7мм)",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:07.059074",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (300x200-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00030433",
+      "matched_name": "Переход 510х310 на 300х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:07.989970",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:08.893856",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (600x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00032948",
+      "matched_name": "Воздуховод 585х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:09.718660",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "НФ-00032948",
+      "matched_name": "Воздуховод 585х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:10.520478",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (400x400-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00032948",
+      "matched_name": "Воздуховод 585х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:11.338493",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x400-1500  б=0.7мм Ш20)",
+      "matched_code": "50837",
+      "matched_name": "Тройник 500х400/ф315",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:12.439419",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (300x200-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:13.185260",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (500x250-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:13.955907",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:14.968320",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": null,
+      "matched_name": null,
+      "matched_unit": null,
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:31:15.869563",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "шт",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:31:16.952300",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:17.781295",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:31:18.931951",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:25.187480",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:26.232325",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:27.351321",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:28.364408",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:29.944128",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:31.036513",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:32.062395",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф315-90-315 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:33.065410",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-90-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:34:34.019332",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-45-125 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:34.978231",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-45-160 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:35.873801",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:36.675042",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:38.121445",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:34:39.115880",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:34:40.203957",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:34:41.135985",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:34:42.162182",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:34:43.471739",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "НФ-00031841",
+      "matched_name": "Переход 800х350 на 600х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:44.347286",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "НФ-00009679",
+      "matched_name": "Переход ф280/ф100",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:45.252921",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф125-70 б=0.5мм )",
+      "matched_code": "НФ-00031169",
+      "matched_name": "Переход 700х150 на 500х150.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:46.190920",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "НФ-00009679",
+      "matched_name": "Переход ф280/ф100",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:47.044860",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "НФ-00031169",
+      "matched_name": "Переход 700х150 на 500х150.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:47.896724",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "НФ-00031841",
+      "matched_name": "Переход 800х350 на 600х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:48.805162",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф315/Ф250-100 б=0.5мм )",
+      "matched_code": "НФ-00037415",
+      "matched_name": "Тройник 200х100/600х100/200х100.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:49.878606",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф400/Ф200-300 б=0.5мм )",
+      "matched_code": "НФ-00031169",
+      "matched_name": "Переход 700х150 на 500х150.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:50.795786",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф100/Ф160-100 б=0.5мм)",
+      "matched_code": "НФ-00004791",
+      "matched_name": "Врезка 605х305/ ф400",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:51.824694",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф160/Ф200-100 б=0.5мм)",
+      "matched_code": "НФ-00004791",
+      "matched_name": "Врезка 605х305/ ф400",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:52.763544",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф100-20 б=0.5мм)",
+      "matched_code": "НФ-00011654",
+      "matched_name": "Заглушка 515х400",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:53.646181",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф500-20  б=0.7мм)",
+      "matched_code": "НФ-00011654",
+      "matched_name": "Заглушка 515х400",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:54.798443",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (300x200-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:55.670751",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:34:56.436467",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (600x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:57.211592",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:58.074115",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (400x400-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00014156",
+      "matched_name": "Воздуховод 650х350.",
+      "matched_unit": "пог.м",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:34:58.924922",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x400-1500  б=0.7мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7,
+      "timestamp": "2026-02-09T11:34:59.711855",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (300x200-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:00.806464",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "НФ-00037415",
+      "matched_name": "Тройник 200х100/600х100/200х100.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:02.782840",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": "57896",
+      "matched_name": "Заглушка 2200х2000",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:03.600525",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "57896",
+      "matched_name": "Заглушка 2200х2000",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:04.539170",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "57896",
+      "matched_name": "Заглушка 2200х2000",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:05.422167",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "НФ-00031169",
+      "matched_name": "Переход 700х150 на 500х150.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:35:06.377807",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T11:56:29.586504",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T11:56:29.592602",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T11:56:29.597443",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T11:56:29.602130",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф100-90-100 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:33.579786",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T11:56:34.462912",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:35.461081",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:56:36.472438",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф315-90-315 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:56:38.279648",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-90-500  б=0.7мм )",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:39.514783",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-45-125 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:56:40.665547",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-45-160 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:41.705842",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:42.966202",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-45-500  б=0.7мм )",
+      "matched_code": "63620",
+      "matched_name": "Врезка 350х150/ф500",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:44.063823",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:45.042548",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:46.580841",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:47.725417",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:48.887914",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:50.107782",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:51.237797",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.8,
+      "timestamp": "2026-02-09T11:56:52.485261",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:53.999398",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф125-70 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "нет единицы измерения",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T11:56:55.252641",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:56:56.204536",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:56:57.417677",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:56:58.414349",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф315/Ф250-100 б=0.5мм )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:56:59.442258",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф400/Ф200-300 б=0.5мм )",
+      "matched_code": "НФ-00042908",
+      "matched_name": "Переход 520х520 на 300х300",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:00.651505",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф100/Ф160-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:02.070650",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф160/Ф200-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:03.545382",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф100-20 б=0.5мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:04.641142",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф500-20  б=0.7мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:05.626961",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (300x200-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00030433",
+      "matched_name": "Переход 510х310 на 300х200.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:06.675874",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00040181",
+      "matched_name": "Фланец ф540.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:07.580896",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (600x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:09.902165",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "64348",
+      "matched_name": "Воздуховод 850х350",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:10.837084",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (400x400-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:11.948136",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x400-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:12.971983",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (300x200-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "НФ-00023723",
+      "matched_name": "Отвод 90 500х2000.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:14.029859",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (500x250-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:15.071408",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T11:57:16.132675",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:19.219285",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:20.185905",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T11:57:21.224455",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "47930",
+      "matched_name": "Переход 900х250 на 600х200",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T11:57:22.257384",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:15:26.248439",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:15:26.254988",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:15:26.261408",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:15:26.266405",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф100-90-100 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:27.477953",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:28.324549",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:29.351794",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:30.414208",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф315-90-315 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:31.505445",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-90-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:32.471975",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-45-125 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:33.438748",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-45-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:34.422540",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:35.464826",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-45-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:36.509041",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:37.514154",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф125-200/Ф100-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:39.250873",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф200-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00037530",
+      "matched_name": "Тройник 200х350/400х250/200х350.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:40.463594",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф250-225/Ф125-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:41.838487",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф315-300/Ф200-100 б=0.5мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:42.949678",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Тройник круглого сечения с круглой прямой врезкой (Ф400-415/Ф315-100  б=0.7мм  )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:44.067056",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф125/Ф100-60 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:45.121431",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф100-100 б=0.5мм )",
+      "matched_code": "НФ-00030165",
+      "matched_name": "Переход 500х200 на 350х200.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:46.138524",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф160/Ф125-70 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:47.032700",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф100-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:47.995801",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф125-130 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:48.892939",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф200/Ф160-80 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "нет подходящей позиции",
+      "matched_unit": "",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:49.883174",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф315/Ф250-100 б=0.5мм )",
+      "matched_code": "НФ-00035549",
+      "matched_name": "Тройник ф315/200х150/ф315.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:51.010505",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход круглого сечения центральный (Ф400/Ф200-300 б=0.5мм )",
+      "matched_code": "НФ-00042908",
+      "matched_name": "Переход 520х520 на 300х300",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:52.115227",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф100/Ф160-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:15:53.113283",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка круглого сечения прямая в круглый воздуховод (Ф160/Ф200-100 б=0.5мм)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:15:54.400821",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф100-20 б=0.5мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:55.284046",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка круглого сечения (Ф500-20  б=0.7мм)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:56.233422",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (300x200-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00030433",
+      "matched_name": "Переход 510х310 на 300х200.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:57.249834",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00040181",
+      "matched_name": "Фланец ф540.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:58.294443",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (600x250-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:15:59.242358",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (1000x300-1500  б= 1.00 Ш30",
+      "matched_code": "64348",
+      "matched_name": "Воздуховод 850х350",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:00.252858",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (400x400-1500 б=0.5мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:01.191435",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод прямоугольного сечения (500x400-1500  б=0.7мм Ш20)",
+      "matched_code": "НФ-00014164",
+      "matched_name": "Воздуховод 650х600.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:02.222140",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (300x200-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "НФ-00023723",
+      "matched_name": "Отвод 90 500х2000.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:03.281235",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод прямоугольного сечения прямой (500x250-90-100-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:16:04.602147",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Врезка прямоугольного сечения прямая в прямоугольный воздуховод (300x200-100 б=0.5мм Ш20)",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:16:05.782416",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (400x400-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:06.897131",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (300x200-20 б=0.5мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:07.875188",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Заглушка прямоугольного сечения (500x250-20  б=0.7мм Ш20)",
+      "matched_code": "000012941",
+      "matched_name": "Заглушка 450х150",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:09.347789",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Переход прямоугольного сечения  (600х250\\300х200 б=0.7мм Ш20 )",
+      "matched_code": "47930",
+      "matched_name": "Переход 900х250 на 600х200",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:16:10.402647",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:18:04.988945",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф200-3000   б=0,5мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:18:05.002888",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф400-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:18:05.009838",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф500-3000   б=0,7мм)",
+      "matched_code": "НФ-00003579",
+      "matched_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "matched_unit": "шт",
+      "confidence": 1.0,
+      "timestamp": "2026-02-09T12:18:05.015992",
+      "is_corrected": true
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф100-90-100 б=0.5мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:18:06.279369",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-90-125 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:18:07.377067",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-90-160 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:18:08.512353",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-90-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:18:09.601935",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф315-90-315 б=0.5мм )",
+      "matched_code": "НФ-00032023",
+      "matched_name": "Переход 800х500 на 800х400.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:18:11.151547",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-90-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:18:12.156691",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф125-45-125 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:18:13.263521",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф160-45-160 б=0.5мм )",
+      "matched_code": "НФ-00022938",
+      "matched_name": "Отвод 45 200х1800.",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:18:14.297320",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф200-45-200 б=0.5мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.7999999999999999,
+      "timestamp": "2026-02-09T12:18:15.307575",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф500-45-500  б=0.7мм )",
+      "matched_code": "null",
+      "matched_name": "null",
+      "matched_unit": "null",
+      "confidence": 0.9,
+      "timestamp": "2026-02-09T12:18:16.200503",
+      "is_corrected": false
+    },
+    {
+      "original_name": "Отвод круглого сечения (Ф710-45-710  б=0.7мм )",
+      "matched_code": "63299",
+      "matched_name": "Отвод 90 800х1280",
+      "matched_unit": "шт",
+      "confidence": 0.95,
+      "timestamp": "2026-02-09T12:18:17.163745",
+      "is_corrected": false
+    }
+  ],
+  "corrections": [
+    {
+      "original_name": "Воздуховод круглого сечения спирально-навивной (Ф100-3000   б=0,5мм)",
+      "corrected_code": "НФ-00003579",
+      "corrected_name": "Воздуховод спирально-навивной металлический, оцинк.",
+      "corrected_unit": "шт",
+      "timestamp": "2026-02-09T11:33:50.323194"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Документация
+README.md
+INSTALL.md
+QUICKSTART.md
+*.md
+
+# Тестовые файлы
+test_server.py
+
+# Временные файлы
+*.log
+*.tmp
+
+# Загрузки (будут монтироваться как volume)
+uploads/*
+!uploads/.gitkeep
+
+# Отчеты (будут монтироваться как volume)
+reports/*
+!reports/.gitkeep
+
+# Данные обучения (будут монтироваться как volume)
+training_data.json
+
+# Номенклатура (будет монтироваться как volume)
+номенклатура.csv
+
+# Индекс эмбеддингов (генерируется при запуске)
+nomenclature_embeddings.npz

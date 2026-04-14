@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фирма вентиляция</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .content-wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .status-bar {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4caf50;
+        }
+
+        .status-indicator.error {
+            background: #f44336;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .items-list {
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 200px;
+        }
+
+        .item-row {
+            display: grid;
+            grid-template-columns: 40px 1fr 120px 120px 50px;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        .item-row input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .item-row input[type="text"] {
+            flex: 1;
+        }
+
+        .item-row input[type="number"] {
+            width: 100px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results-section {
+            margin-top: 40px;
+            display: none;
+        }
+
+        .results-section.active {
+            display: block;
+        }
+
+        .results-container {
+            width: 100%;
+            margin-top: 20px;
+            overflow-x: visible;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto;
+        }
+
+        .results-table th,
+        .results-table td {
+            padding: 10px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Адаптивные ширины колонок (9 колонок) */
+        .results-table th:nth-child(1),
+        .results-table td:nth-child(1) { width: 20%; }
+
+        .results-table th:nth-child(2),
+        .results-table td:nth-child(2) { width: 5%; text-align: center; }
+
+        .results-table th:nth-child(3),
+        .results-table td:nth-child(3) { width: 6%; text-align: center; }
+
+        .results-table th:nth-child(4),
+        .results-table td:nth-child(4) { width: 8%; }
+
+        .results-table th:nth-child(5),
+        .results-table td:nth-child(5) { width: 22%; }
+
+        .results-table th:nth-child(6),
+        .results-table td:nth-child(6) { width: 6%; text-align: center; }
+
+        .results-table th:nth-child(7),
+        .results-table td:nth-child(7) { width: 7%; text-align: center; }
+
+        .results-table th:nth-child(8),
+        .results-table td:nth-child(8) { width: 18%; }
+
+        .results-table th:nth-child(9),
+        .results-table td:nth-child(9) { width: 5%; text-align: center; }
+
+        .results-table th {
+            background: #f5f5f5;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .confidence-high {
+            background: #c6efce;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .confidence-medium {
+            background: #ffeb9c;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .confidence-low {
+            background: #ffc7ce;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        .correction-form {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .correction-form.active {
+            display: block;
+        }
+
+        .correction-form input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .training-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+        <div class="header">
+            <h1>🤖 Фирма вентиляция</h1>
+            <p>Используйте нейросеть для автоматического сопоставления позиций из заявки с номенклатурой</p>
+        </div>
+
+        <div class="content">
+            <div class="status-bar">
+                <div class="status-item">
+                    <span class="status-indicator" id="statusIndicator"></span>
+                    <span id="statusText">Проверка статуса...</span>
+                </div>
+                <div id="itemsCount"></div>
+            </div>
+
+            <div class="form-section">
+                <h2>Позиции из заявки</h2>
+                
+                <div style="margin-bottom: 20px; padding: 20px; background: #f0f0f0; border-radius: 10px; border: 2px dashed #ccc;">
+                    <h3 style="margin-bottom: 15px; font-size: 16px;">📄 Загрузить заявку</h3>
+                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Excel (.xlsx, .xls) — столбцы: Наименование | Количество | Ед.изм</p>
+                    <input type="file" id="pdfFileInput" accept=".xlsx,.xls" style="display: none;" onchange="handleFileUpload(event)">
+                    <button class="btn btn-secondary" onclick="document.getElementById('pdfFileInput').click()" style="margin-right: 10px;">
+                        📎 Выбрать файл
+                    </button>
+                    <span id="fileStatus" style="color: #666; font-size: 14px;"></span>
+                    <div id="fileProgress" style="display: none; margin-top: 10px;">
+                        <div class="spinner" style="width: 30px; height: 30px; border-width: 3px;"></div>
+                        <span style="margin-left: 10px;">Обработка файла...</span>
+                    </div>
+                </div>
+                
+                <div class="items-list" id="itemsList">
+                    <div class="item-row">
+                        <span style="min-width: 40px; font-weight: bold; color: #666;">№</span>
+                        <input type="text" placeholder="Наименование позиции" class="item-name">
+                        <input type="number" placeholder="Кол-во" class="item-quantity" min="1" value="1">
+                        <input type="text" placeholder="Ед.изм" class="item-unit" value="">
+                        <button class="btn btn-danger" onclick="removeItem(this)">✕</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-secondary" onclick="addItem()">+ Добавить позицию</button>
+                    <button class="btn btn-primary" onclick="processItems()" id="processBtn">
+                        🔍 Найти соответствия
+                    </button>
+                </div>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Обработка данных через нейросеть...</p>
+            </div>
+
+            <div id="alertContainer"></div>
+
+            <div class="results-section" id="resultsSection">
+                <h2>Результаты сопоставления</h2>
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="downloadExcel()" id="downloadBtn">
+                        📥 Скачать Excel файл
+                    </button>
+                </div>
+                <div class="results-container">
+                    <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Исходное наименование</th>
+                            <th>Кол-во</th>
+                            <th>Ед.изм (заявка)</th>
+                            <th>Код</th>
+                            <th>Наименование полное</th>
+                            <th>Ед.изм</th>
+                            <th>Уверенность</th>
+                            <th>Примечание</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let currentFilename = null;
+        let currentResults = [];
+        // Определяем URL API автоматически
+        // Если файл открыт через file://, используем localhost
+        // Если через HTTP, используем текущий origin
+        const API_URL = (window.location.protocol === 'file:' || window.location.hostname === '')
+            ? 'http://127.0.0.1:5000'
+            : (window.location.origin || 'http://127.0.0.1:5000');
+
+        // Проверка статуса при загрузке
+        async function checkStatus() {
+            try {
+                const response = await fetch(`${API_URL}/api/status`);
+                const data = await response.json();
+                
+                const indicator = document.getElementById('statusIndicator');
+                const statusText = document.getElementById('statusText');
+                const itemsCount = document.getElementById('itemsCount');
+                
+                if (data.nomenclature_loaded) {
+                    indicator.classList.remove('error');
+                    statusText.textContent = 'Номенклатура загружена';
+                    let statusText_full = `Позиций в номенклатуре: ${data.items_count}`;
+                    if (data.training_examples > 0) {
+                        statusText_full += ` | Примеров обучения: ${data.training_examples}`;
+                    }
+                    itemsCount.textContent = statusText_full;
+                } else {
+                    indicator.classList.add('error');
+                    statusText.textContent = 'Номенклатура не загружена';
+                }
+            } catch (error) {
+                const indicator = document.getElementById('statusIndicator');
+                const statusText = document.getElementById('statusText');
+                indicator.classList.add('error');
+                
+                // Более детальное сообщение об ошибке
+                if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+                    statusText.textContent = 'Сервер не запущен или недоступен. Убедитесь, что запущен python app.py';
+                } else {
+                    statusText.textContent = 'Ошибка подключения к серверу: ' + error.message;
+                }
+                
+                console.error('Ошибка подключения:', error);
+            }
+        }
+
+        function addItem() {
+            const itemsList = document.getElementById('itemsList');
+            const itemRow = document.createElement('div');
+            itemRow.className = 'item-row';
+            itemRow.innerHTML = `
+                <span></span>
+                <input type="text" placeholder="Наименование позиции" class="item-name">
+                <input type="number" placeholder="Кол-во" class="item-quantity" min="1" value="1">
+                <input type="text" placeholder="Ед.изм" class="item-unit" value="">
+                <button class="btn btn-danger" onclick="removeItem(this)">✕</button>
+            `;
+            itemsList.appendChild(itemRow);
+        }
+
+        function removeItem(btn) {
+            const itemsList = document.getElementById('itemsList');
+            if (itemsList.children.length > 1) {
+                btn.parentElement.remove();
+            } else {
+                alert('Должна быть хотя бы одна позиция');
+            }
+        }
+
+        function showAlert(message, type = 'success') {
+            const container = document.getElementById('alertContainer');
+            container.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+            setTimeout(() => {
+                container.innerHTML = '';
+            }, 5000);
+        }
+
+        async function processItems() {
+            const items = [];
+            const itemRows = document.querySelectorAll('.item-row');
+            
+            itemRows.forEach(row => {
+                const name = row.querySelector('.item-name').value.trim();
+                const quantity = row.querySelector('.item-quantity').value || '1';
+                const unitEl = row.querySelector('.item-unit');
+                const unit = unitEl ? unitEl.value.trim() : '';
+                
+                if (name) {
+                    items.push({ name, quantity, unit });
+                }
+            });
+
+            if (items.length === 0) {
+                showAlert('Пожалуйста, введите хотя бы одну позицию', 'error');
+                return;
+            }
+
+            // Показываем загрузку
+            document.getElementById('loading').classList.add('active');
+            document.getElementById('processBtn').disabled = true;
+            document.getElementById('resultsSection').classList.remove('active');
+
+            try {
+                const response = await fetch(`${API_URL}/api/match`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ items })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    currentFilename = data.filename;
+                    currentResults = data.results;
+                    displayResults(data.results);
+                    showAlert('Сопоставление выполнено успешно!', 'success');
+                } else {
+                    showAlert(data.error || 'Ошибка при обработке', 'error');
+                }
+            } catch (error) {
+                showAlert('Ошибка подключения к серверу: ' + error.message, 'error');
+            } finally {
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('processBtn').disabled = false;
+            }
+        }
+
+        function displayResults(results) {
+            const tbody = document.getElementById('resultsBody');
+            tbody.innerHTML = '';
+
+            results.forEach((result, index) => {
+                const row = document.createElement('tr');
+                row.id = `result-row-${index}`;
+                
+                const confidence = result.confidence || 0;
+                let confidenceClass = 'confidence-low';
+                if (confidence >= 0.8) confidenceClass = 'confidence-high';
+                else if (confidence >= 0.5) confidenceClass = 'confidence-medium';
+
+                row.innerHTML = `
+                    <td>${result.original_name}</td>
+                    <td>${result.quantity}</td>
+                    <td>${result.source_unit || '-'}</td>
+                    <td id="code-${index}">${result.matched_code || '-'}</td>
+                    <td id="name-${index}">${result.matched_name || '-'}</td>
+                    <td id="unit-${index}">${result.matched_unit || '-'}</td>
+                    <td><span class="${confidenceClass}">${(confidence * 100).toFixed(1)}%</span></td>
+                    <td>${result.reason || '-'}</td>
+                    <td>
+                        <button class="btn btn-secondary btn-small" onclick="showCorrectionForm(${index}, '${result.original_name.replace(/'/g, "\\'")}')">
+                            ✏️ Исправить
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+                
+                // Добавляем форму для исправления
+                const correctionRow = document.createElement('tr');
+                correctionRow.id = `correction-row-${index}`;
+                correctionRow.innerHTML = `
+                    <td colspan="9">
+                        <div class="correction-form" id="correction-form-${index}">
+                            <strong>Исправление для: "${result.original_name}"</strong>
+                            <div style="margin-top: 10px;">
+                                <input type="text" id="corr-code-${index}" placeholder="Правильный код" value="${result.matched_code || ''}">
+                                <input type="text" id="corr-name-${index}" placeholder="Правильное наименование" value="${result.matched_name || ''}">
+                                <input type="text" id="corr-unit-${index}" placeholder="Единица измерения" value="${result.matched_unit || ''}">
+                                <button class="btn btn-primary btn-small" onclick="saveCorrection(${index}, '${result.original_name.replace(/'/g, "\\'")}')">
+                                    💾 Сохранить исправление
+                                </button>
+                                <button class="btn btn-secondary btn-small" onclick="hideCorrectionForm(${index})">
+                                    Отмена
+                                </button>
+                            </div>
+                            <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                                Исправление будет использовано для обучения модели и улучшения точности в будущем
+                            </p>
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(correctionRow);
+            });
+
+            document.getElementById('resultsSection').classList.add('active');
+        }
+
+        function showCorrectionForm(index, originalName) {
+            document.getElementById(`correction-form-${index}`).classList.add('active');
+        }
+
+        function hideCorrectionForm(index) {
+            document.getElementById(`correction-form-${index}`).classList.remove('active');
+        }
+
+        async function saveCorrection(index, originalName) {
+            const correctedCode = document.getElementById(`corr-code-${index}`).value.trim();
+            const correctedName = document.getElementById(`corr-name-${index}`).value.trim();
+            const correctedUnit = document.getElementById(`corr-unit-${index}`).value.trim();
+
+            if (!correctedCode) {
+                showAlert('Пожалуйста, укажите правильный код', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_URL}/api/correct`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        original_name: originalName,
+                        corrected_code: correctedCode,
+                        corrected_name: correctedName,
+                        corrected_unit: correctedUnit
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Обновляем отображение
+                    document.getElementById(`code-${index}`).textContent = correctedCode;
+                    document.getElementById(`name-${index}`).textContent = correctedName;
+                    document.getElementById(`unit-${index}`).textContent = correctedUnit;
+                    
+                    hideCorrectionForm(index);
+                    showAlert('Исправление сохранено! Модель будет использовать это в будущих сопоставлениях.', 'success');
+                } else {
+                    showAlert(data.error || 'Ошибка при сохранении исправления', 'error');
+                }
+            } catch (error) {
+                showAlert('Ошибка подключения к серверу: ' + error.message, 'error');
+            }
+        }
+
+
+        async function downloadExcel() {
+            if (!currentFilename) {
+                showAlert('Файл не найден', 'error');
+                return;
+            }
+            try {
+                await fetch(`${API_URL}/api/confirm-results`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ results: currentResults })
+                });
+            } catch (e) {
+                // не блокируем скачивание при ошибке сохранения
+            }
+            window.open(`${API_URL}/api/download/${currentFilename}`, '_blank');
+        }
+
+        async function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const allowedTypes = [
+                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                'application/vnd.ms-excel'
+            ];
+            const allowedExtensions = ['.xlsx', '.xls'];
+            const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+            
+            if (!allowedTypes.includes(file.type) && !allowedExtensions.includes(fileExtension)) {
+                showAlert('Пожалуйста, выберите Excel-файл формата .xlsx или .xls', 'error');
+                return;
+            }
+            
+            const fileStatus = document.getElementById('fileStatus');
+            const fileProgress = document.getElementById('fileProgress');
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            fileStatus.textContent = `Загружается: ${file.name}...`;
+            fileProgress.style.display = 'flex';
+            
+            try {
+                const response = await fetch(`${API_URL}/api/upload-application`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success && data.items && data.items.length > 0) {
+                    // Очищаем текущие позиции
+                    const itemsList = document.getElementById('itemsList');
+                    itemsList.innerHTML = '';
+                    
+                    data.items.forEach(item => {
+                        addItemWithData(item.name, item.quantity, item.unit || '', item.row_number || null);
+                    });
+                    
+                    fileStatus.textContent = `✅ Загружено ${data.count} позиций из заявки`;
+                    showAlert(`Успешно загружено ${data.count} позиций из заявки!`, 'success');
+                } else {
+                    let detail = data.error;
+                    if (!detail) {
+                        if (data.success && (!data.items || data.items.length === 0)) {
+                            detail =
+                                'В файле не найдено ни одной позиции (столбцы: 1 — наименование, 2 — количество, 3 — ед.изм).';
+                        } else {
+                            detail = 'Не удалось извлечь позиции из файла';
+                        }
+                    }
+                    fileStatus.textContent = detail;
+                    showAlert(detail, 'error');
+                }
+            } catch (error) {
+                fileStatus.textContent = 'Ошибка загрузки файла';
+                showAlert('Ошибка при загрузке файла: ' + error.message, 'error');
+            } finally {
+                fileProgress.style.display = 'none';
+                // Сбрасываем input для возможности повторной загрузки того же файла
+                event.target.value = '';
+            }
+        }
+
+        function addItemWithData(name, quantity, unit = '', rowNumber = null) {
+            const itemsList = document.getElementById('itemsList');
+            const itemRow = document.createElement('div');
+            itemRow.className = 'item-row';
+            
+            const rowLabel = rowNumber
+                ? `<span style="min-width: 40px; font-weight: bold; color: #666;">${rowNumber}</span>`
+                : '<span></span>';
+            
+            itemRow.innerHTML = `
+                ${rowLabel}
+                <input type="text" placeholder="Наименование позиции" class="item-name" value="${name.replace(/"/g, '&quot;')}">
+                <input type="number" placeholder="Кол-во" class="item-quantity" min="1" value="${quantity || '1'}">
+                <input type="text" placeholder="Ед.изм" class="item-unit" value="${(unit || '').replace(/"/g, '&quot;')}">
+                <button class="btn btn-danger" onclick="removeItem(this)">✕</button>
+            `;
+            itemsList.appendChild(itemRow);
+        }
+
+        // Инициализация
+        checkStatus();
+        setInterval(checkStatus, 30000);
+    </script>
+</body>
+</html>
