@@ -12,7 +12,7 @@
 1) Создайте виртуальное окружение:
 
 ```bash
-cd /Users/alexey/Documents/Projects/vent2
+cd <путь до папки с кодом>
 python3 -m venv venv
 ```
 
