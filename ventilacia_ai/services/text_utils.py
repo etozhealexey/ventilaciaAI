@@ -67,8 +67,11 @@ def normalize_name(name: str) -> str:
         r"диаметр \1 угол \2 диаметр \3",
         normalized,
     )
-    # ф с двумя числами через дефис: ф100-3000 → диаметр 100 длина 3000
-    normalized = re.sub(r"ф\s*(\d+)\s*-\s*(\d+)", r"диаметр \1 длина \2", normalized)
+    # ф с двумя числами через дефис, где второе — трёхзначное+ (длина в мм):
+    #   ф100-3000 → диаметр 100 длина 3000.
+    # Короткие/дробные «-1,5» не трогаем — это обычно количество/толщина,
+    # а не длина изделия.
+    normalized = re.sub(r"ф\s*(\d+)\s*-\s*(\d{3,})\b", r"диаметр \1 длина \2", normalized)
     # Тройники/переходы: ф160/ф125/ф160 → диаметр 160/диаметр 125/диаметр 160
     normalized = re.sub(r"ф(\d+)/ф(\d+)/ф(\d+)", r"диаметр \1/диаметр \2/диаметр \3", normalized)
     normalized = re.sub(r"ф(\d+)/ф(\d+)", r"диаметр \1/диаметр \2", normalized)
@@ -104,20 +107,76 @@ def product_types_compatible(query_type: str | None, candidate_type: str | None)
     return query_type == candidate_type
 
 
+def _to_float_mm(value: str, unit: str) -> float:
+    """Приводит размер к миллиметрам."""
+    num = float(value.replace(",", "."))
+    if unit.startswith("м") and not unit.startswith("мм"):
+        num *= 1000
+    return num
+
+
 def extract_dimensions(text: str) -> dict[str, list[str]]:
-    """Извлекает числовые параметры из нормализованного текста для точного сравнения."""
+    """
+    Извлекает числовые параметры из нормализованного текста для точного сравнения.
+    Длины приводятся к миллиметрам (строкой без дробной части, если целое);
+    толщина и углы сохраняются как есть.
+    """
     dims: dict[str, list[str]] = {}
+
     for m in re.finditer(r"диаметр\s+(\d+)", text):
         dims.setdefault("diameters", []).append(m.group(1))
-    for m in re.finditer(r"длина\s+(\d+)", text):
-        dims.setdefault("lengths", []).append(m.group(1))
     for m in re.finditer(r"угол\s+(\d+)", text):
         dims.setdefault("angles", []).append(m.group(1))
-    for m in re.finditer(r"толщина\s+(\d+[.,]?\d*)", text):
-        dims.setdefault("thickness", []).append(m.group(1))
+
+    # Явные длины по ключевому слову «длина N»: считаем в мм (как раньше).
+    for m in re.finditer(r"длина\s+(\d+(?:[.,]\d+)?)", text):
+        dims.setdefault("lengths_mm", []).append(_canon_num(m.group(1)))
+
+    # Длины из «Nм» (метры) и «Nмм» (миллиметры) без ключевого слова.
+    # Важно не ловить «мм» как «м»: требуем, чтобы после «м» не стояла ещё «м».
+    for m in re.finditer(r"(?<![а-яa-zёА-ЯA-ZЁ])(\d+(?:[.,]\d+)?)\s*м(?![а-яa-zёА-ЯA-Zё²³0-9])", text):
+        num_mm = _to_float_mm(m.group(1), "м")
+        # Короткие «м» значения (до 0.5м = 500мм) игнорируем — это может быть мусор.
+        if num_mm >= 500:
+            dims.setdefault("lengths_mm", []).append(_canon_num_float(num_mm))
+
+    for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*мм\b", text):
+        num = float(m.group(1).replace(",", "."))
+        if num >= 100:
+            dims.setdefault("lengths_mm", []).append(_canon_num_float(num))
+        else:
+            dims.setdefault("thickness", []).append(_canon_num(m.group(1)))
+
+    # Явная толщина с ключевым словом.
+    for m in re.finditer(r"толщина\s+(\d+(?:[.,]\d+)?)", text):
+        dims.setdefault("thickness", []).append(_canon_num(m.group(1)))
+
     for m in re.finditer(r"(\d+)х(\d+)", text):
         dims.setdefault("rect", []).append(f"{m.group(1)}х{m.group(2)}")
+
+    # Убираем дубликаты, сохраняя порядок.
+    for k, vals in dims.items():
+        seen: set[str] = set()
+        deduped: list[str] = []
+        for v in vals:
+            if v not in seen:
+                seen.add(v)
+                deduped.append(v)
+        dims[k] = deduped
+
     return dims
+
+
+def _canon_num(raw: str) -> str:
+    """Приводит '1,5' → '1.5', '3.0' → '3'."""
+    num = float(raw.replace(",", "."))
+    return _canon_num_float(num)
+
+
+def _canon_num_float(num: float) -> str:
+    if num == int(num):
+        return str(int(num))
+    return f"{num:g}"
 
 
 def dimensions_match(query_dims: dict, candidate_dims: dict) -> float:
@@ -125,6 +184,8 @@ def dimensions_match(query_dims: dict, candidate_dims: dict) -> float:
     Оценивает, насколько числовые параметры кандидата совпадают с запросом.
     Использует мультимножественное сравнение: каждое значение кандидата
     расходуется при совпадении, чтобы ф160/ф160/ф160 ≠ ф160/ф100/ф125.
+    Дополнительно штрафует за «лишнюю» длину/габариты у кандидата,
+    которых нет в запросе (например, 10-метровый рулон для запроса без длины).
     Возвращает score от 0.0 до 1.0.
     """
     if not query_dims:
@@ -140,7 +201,18 @@ def dimensions_match(query_dims: dict, candidate_dims: dict) -> float:
                 c_vals_remaining.remove(v)
     if total == 0:
         return 0.5
-    return matched / total
+
+    base = matched / total
+
+    # Штраф за «лишние» ключевые параметры у кандидата, которых нет в запросе.
+    # Длина и прямоугольное сечение — критичные: разница означает совсем другой товар.
+    penalty = 0.0
+    for key in ("lengths_mm", "rect"):
+        q_has = bool(query_dims.get(key))
+        c_has = bool(candidate_dims.get(key))
+        if c_has and not q_has:
+            penalty += 0.35
+    return max(0.0, base - penalty)
 
 
 def rank_candidates(

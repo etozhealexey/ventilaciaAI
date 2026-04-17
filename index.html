@@ -365,10 +365,17 @@
                 
                 <div style="margin-bottom: 20px; padding: 20px; background: #f0f0f0; border-radius: 10px; border: 2px dashed #ccc;">
                     <h3 style="margin-bottom: 15px; font-size: 16px;">📄 Загрузить заявку</h3>
-                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Excel (.xlsx, .xls) — столбцы: Наименование | Количество | Ед.изм</p>
-                    <input type="file" id="pdfFileInput" accept=".xlsx,.xls" style="display: none;" onchange="handleFileUpload(event)">
+                    <p style="font-size: 12px; color: #666; margin-bottom: 12px;">
+                        <strong>По шаблону</strong> — быстрый Excel (.xlsx, .xls): 1 столбец — наименование, 2 — количество, 3 — ед.изм. Без нейросети.<br>
+                        <strong>Распознать заявку</strong> — любой Excel/Word/PDF с текстовым слоем. Нейросеть сама извлекает позиции (10–30 сек).
+                    </p>
+                    <input type="file" id="pdfFileInput" accept=".xlsx,.xls" style="display: none;" onchange="handleFileUpload(event, false)">
+                    <input type="file" id="smartFileInput" accept=".xlsx,.xls,.docx,.pdf" style="display: none;" onchange="handleFileUpload(event, true)">
                     <button class="btn btn-secondary" onclick="document.getElementById('pdfFileInput').click()" style="margin-right: 10px;">
-                        📎 Выбрать файл
+                        📎 По шаблону (Excel)
+                    </button>
+                    <button class="btn btn-primary" onclick="document.getElementById('smartFileInput').click()" style="margin-right: 10px;">
+                        🤖 Распознать заявку (Excel/Word/PDF)
                     </button>
                     <span id="fileStatus" style="color: #666; font-size: 14px;"></span>
                     <div id="fileProgress" style="display: none; margin-top: 10px;">
@@ -690,32 +697,34 @@
             window.open(`${API_URL}/api/download/${currentFilename}`, '_blank');
         }
 
-        async function handleFileUpload(event) {
+        async function handleFileUpload(event, smart) {
             const file = event.target.files[0];
             if (!file) return;
-            
-            const allowedTypes = [
-                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                'application/vnd.ms-excel'
-            ];
-            const allowedExtensions = ['.xlsx', '.xls'];
+
+            const allowedExtensions = smart
+                ? ['.xlsx', '.xls', '.docx', '.pdf']
+                : ['.xlsx', '.xls'];
             const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
-            
-            if (!allowedTypes.includes(file.type) && !allowedExtensions.includes(fileExtension)) {
-                showAlert('Пожалуйста, выберите Excel-файл формата .xlsx или .xls', 'error');
+
+            if (!allowedExtensions.includes(fileExtension)) {
+                showAlert('Поддерживаются форматы: ' + allowedExtensions.join(', '), 'error');
                 return;
             }
-            
+
             const fileStatus = document.getElementById('fileStatus');
             const fileProgress = document.getElementById('fileProgress');
             const formData = new FormData();
             formData.append('file', file);
-            
-            fileStatus.textContent = `Загружается: ${file.name}...`;
+
+            fileStatus.textContent = smart
+                ? `Распознавание «${file.name}» через нейросеть, это может занять 10–30 сек...`
+                : `Загружается: ${file.name}...`;
             fileProgress.style.display = 'flex';
+
+            const endpoint = smart ? '/api/upload-application-smart' : '/api/upload-application';
             
             try {
-                const response = await fetch(`${API_URL}/api/upload-application`, {
+                const response = await fetch(`${API_URL}${endpoint}`, {
                     method: 'POST',
                     body: formData
                 });
@@ -734,11 +743,10 @@
                     fileStatus.textContent = `✅ Загружено ${data.count} позиций из заявки`;
                     showAlert(`Успешно загружено ${data.count} позиций из заявки!`, 'success');
                 } else {
-                    let detail = data.error;
+                    let detail = data.error || data.warning;
                     if (!detail) {
                         if (data.success && (!data.items || data.items.length === 0)) {
-                            detail =
-                                'В файле не найдено ни одной позиции (столбцы: 1 — наименование, 2 — количество, 3 — ед.изм).';
+                            detail = 'В файле не найдено ни одной позиции.';
                         } else {
                             detail = 'Не удалось извлечь позиции из файла';
                         }

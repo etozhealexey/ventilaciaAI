@@ -5,13 +5,16 @@ from typing import Any
 from fastapi import UploadFile
 
 from ventilacia_ai.services import config_service
-from ventilacia_ai.services.parsing_service import parse_application_file
+from ventilacia_ai.services.parsing_service import (
+    parse_application_file,
+    parse_application_file_smart,
+)
 
 
-async def parse_uploaded_application(file: UploadFile) -> dict[str, Any]:
+async def _parse_upload(file: UploadFile, smart: bool) -> dict[str, Any]:
     """
-    Сохраняет загруженный файл во временный путь, парсит позиции, затем удаляет файл.
-    Возвращает структуру для ответа API.
+    Общая логика: сохраняет загруженный файл во временный путь, парсит позиции,
+    затем удаляет файл. Выбирает парсер по флагу smart.
     """
     if file is None or not file.filename:
         return {"success": False, "error": "Файл не выбран"}
@@ -19,16 +22,20 @@ async def parse_uploaded_application(file: UploadFile) -> dict[str, Any]:
     # Расширение берём из исходного имени: secure_filename() выкидывает кириллицу и
     # ломает проверку для файлов вроде «Заявка.xlsx» → остаётся «xlsx» без точки.
     raw_name = file.filename.strip()
+    allowed = (
+        config_service.ALLOWED_EXTENSIONS_SMART if smart else config_service.ALLOWED_EXTENSIONS
+    )
+    allowed_list = ", ".join(sorted(f".{e}" for e in allowed))
     if "." not in raw_name:
         return {
             "success": False,
-            "error": "Неподдерживаемый тип файла. Разрешены только Excel-файлы (.xlsx, .xls)",
+            "error": f"Неподдерживаемый тип файла. Разрешены: {allowed_list}",
         }
     ext = raw_name.rsplit(".", 1)[1].lower()
-    if ext not in config_service.ALLOWED_EXTENSIONS:
+    if ext not in allowed:
         return {
             "success": False,
-            "error": "Неподдерживаемый тип файла. Разрешены только Excel-файлы (.xlsx, .xls)",
+            "error": f"Неподдерживаемый тип файла. Разрешены: {allowed_list}",
         }
 
     os.makedirs(config_service.UPLOAD_FOLDER, exist_ok=True)
@@ -41,13 +48,31 @@ async def parse_uploaded_application(file: UploadFile) -> dict[str, Any]:
         with open(temp_path, "wb") as f:
             f.write(content)
 
-        items = parse_application_file(temp_path, ext)
-        items = items or []
-        return {
+        parser = parse_application_file_smart if smart else parse_application_file
+        items = parser(temp_path, ext) or []
+        payload: dict[str, Any] = {
             "success": True,
             "items": items,
             "count": len(items),
         }
+        if not items:
+            if ext == "pdf":
+                payload["warning"] = (
+                    "Позиции не найдены. Возможно, это скан PDF без текстового слоя — "
+                    "такой формат пока не поддерживается."
+                )
+            elif ext == "docx":
+                payload["warning"] = (
+                    "Позиции не найдены. Проверьте, что в документе есть таблица или список позиций."
+                )
+            elif smart:
+                payload["warning"] = "Позиции не найдены. Проверьте содержимое файла."
+            else:
+                payload["warning"] = (
+                    "Позиции не найдены. Проверьте формат: 1 колонка — наименование, "
+                    "2 — количество, 3 — ед.изм. Либо воспользуйтесь режимом «Распознать заявку»."
+                )
+        return payload
     except Exception as e:
         return {"success": False, "error": f"Ошибка обработки файла: {e}"}
     finally:
@@ -57,3 +82,12 @@ async def parse_uploaded_application(file: UploadFile) -> dict[str, Any]:
         except Exception:
             pass
 
+
+async def parse_uploaded_application(file: UploadFile) -> dict[str, Any]:
+    """Строгий режим: только xlsx/xls фиксированного формата, без LLM."""
+    return await _parse_upload(file, smart=False)
+
+
+async def parse_uploaded_application_smart(file: UploadFile) -> dict[str, Any]:
+    """Умный режим: xlsx/xls/docx/pdf — позиции извлекаются через GigaChat."""
+    return await _parse_upload(file, smart=True)

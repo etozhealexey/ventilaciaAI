@@ -47,13 +47,27 @@ def get_gigachat_client() -> "GigaChat":
 
     model = os.getenv("GIGACHAT_MODEL", _DEFAULT_CHAT_MODEL).strip() or _DEFAULT_CHAT_MODEL
 
+    # Увеличенный тайм-аут нужен для длинных промптов (например, разбор заявок с таблицами).
+    try:
+        timeout_sec = float(os.getenv("GIGACHAT_TIMEOUT", "180"))
+    except ValueError:
+        timeout_sec = 180.0
+
     try:
         return GigaChat(
             credentials=credentials,
             verify_ssl_certs=False,
             model=model,
+            timeout=timeout_sec,
         )
     except (TypeError, ValueError):
-        return GigaChat(credentials=credentials, model=model)
+        try:
+            return GigaChat(
+                credentials=credentials,
+                model=model,
+                timeout=timeout_sec,
+            )
+        except (TypeError, ValueError):
+            return GigaChat(credentials=credentials, model=model)
 
 
