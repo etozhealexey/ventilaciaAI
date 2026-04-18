@@ -20,9 +20,18 @@ _CANDIDATE_FILES = (
     ".env",
     ".env.txt",   # Блокнот Windows любит дописывать .txt
     ".env.local",
+    ".ENV",
+    ".Env",
+    "env",        # совсем без точки (иногда встречается)
 )
 
 _loaded = False
+_last_diagnostic: str | None = None
+
+
+def get_last_diagnostic() -> str | None:
+    """Возвращает последнее диагностическое сообщение (для вывода на старте)."""
+    return _last_diagnostic
 
 
 def _read_with_fallback_encodings(path: Path) -> str | None:
@@ -66,7 +75,7 @@ def ensure_env_loaded() -> Path | None:
     Загружает переменные окружения из `.env` рядом с корнем проекта.
     Возвращает путь к реально использованному файлу (или None, если не найден).
     """
-    global _loaded
+    global _loaded, _last_diagnostic
     if _loaded:
         return None
 
@@ -78,6 +87,24 @@ def ensure_env_loaded() -> Path | None:
             break
 
     if found is None:
+        # Собираем диагностику: что видит Python в корне проекта?
+        try:
+            entries = sorted(p.name for p in _PROJECT_ROOT.iterdir())
+        except OSError:
+            entries = []
+        env_like = [n for n in entries if "env" in n.lower()]
+        diag_lines = [
+            f"Корень проекта для поиска .env: {_PROJECT_ROOT}",
+            f"Текущий рабочий каталог (CWD):  {Path.cwd()}",
+        ]
+        if env_like:
+            diag_lines.append(
+                "В корне есть файлы с 'env' в имени: " + ", ".join(env_like)
+                + " — переименуйте нужный в '.env' (без расширения)."
+            )
+        else:
+            diag_lines.append("В корне нет ни одного файла, содержащего 'env' в имени.")
+        _last_diagnostic = "\n   ".join(diag_lines)
         _loaded = True
         return None
 
