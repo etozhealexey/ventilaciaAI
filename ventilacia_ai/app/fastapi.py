@@ -36,18 +36,23 @@ async def startup_event() -> None:
     print("🚀 Запуск FastAPI сервера сопоставления с обучением")
     print("=" * 60)
 
-    if _env_file is not None:
-        print(f"\n🔑 Переменные окружения загружены из: {_env_file}")
-    else:
-        print(
-            "\n🔑 Файл .env НЕ найден в корне проекта. "
-            "Проверьте, что файл называется именно '.env' (а не '.env.txt'), "
-            "лежит рядом с app.py и сохранён в UTF-8."
-        )
     has_creds = bool(
         os.getenv("GIGACHAT_CREDENTIALS")
         or (os.getenv("GIGACHAT_CLIENT_ID") and os.getenv("GIGACHAT_AUTH_KEY"))
     )
+    if _env_file is not None:
+        print(f"\n🔑 Переменные окружения загружены из: {_env_file}")
+    elif has_creds:
+        print(
+            "\n🔑 Файл .env не найден, но ключи уже заданы в окружении процесса "
+            "(например, через `setx` или `$env:GIGACHAT_CREDENTIALS=...`) — ок."
+        )
+    else:
+        print(
+            "\n🔑 Файл .env НЕ найден и переменные окружения не заданы. "
+            "Создайте '.env' рядом с app.py (UTF-8, без расширения .txt) "
+            "или задайте ключи в оболочке."
+        )
     print(f"   GIGACHAT_CREDENTIALS: {'задан' if has_creds else 'ПУСТО'}")
 
     print("\n📊 Загрузка номенклатуры...")
