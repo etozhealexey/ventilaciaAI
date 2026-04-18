@@ -1,7 +1,7 @@
 import os
 import ssl
 
-from dotenv import load_dotenv
+from ventilacia_ai.services.env_loader import ensure_env_loaded
 
 try:
     from gigachat import GigaChat
@@ -12,7 +12,7 @@ except ImportError:
     print("Предупреждение: библиотека gigachat не установлена. Установите: pip install gigachat")
 
 
-load_dotenv()
+ensure_env_loaded()
 
 # По умолчанию SDK подставляет модель «GigaChat» (часто это Lite). Если лимит Lite исчерпан,
 # а подписка на Pro/Max активна — задайте GIGACHAT_MODEL=GigaChat-Pro или GigaChat-Max в .env.
