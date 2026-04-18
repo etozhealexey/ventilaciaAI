@@ -51,6 +51,11 @@ async def _parse_upload(file: UploadFile, smart: bool) -> dict[str, Any]:
 
         parser = parse_application_file_smart if smart else parse_application_file
         items = parser(temp_path, ext) or []
+        # Перенумеровываем строго по порядку (1..N), чтобы пользователь видел
+        # позиционные номера, а не номера строк исходного документа.
+        for idx, item in enumerate(items, start=1):
+            if isinstance(item, dict):
+                item["row_number"] = idx
         payload: dict[str, Any] = {
             "success": True,
             "items": items,

@@ -325,9 +325,11 @@
         }
 
         .alert {
-            padding: 15px;
+            padding: 16px 20px;
             border-radius: 8px;
             margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.5;
         }
 
         .alert-success {
@@ -340,12 +342,36 @@
             background: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
+            border-left: 6px solid #dc3545;
+            font-weight: 500;
         }
 
         .alert-warning {
             background: #fff3cd;
-            color: #856404;
-            border: 1px solid #ffeeba;
+            color: #664d03;
+            border: 1px solid #ffda6a;
+            border-left: 6px solid #f59e0b;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+        }
+
+        .alert-warning strong,
+        .alert-error strong {
+            font-weight: 700;
+        }
+
+        /* Контейнер верхних алертов — делаем sticky, чтобы уведомление
+           не исчезало из виду при прокрутке страницы. */
+        #alertContainer:not(:empty) {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding-top: 10px;
+            background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.95) 85%,
+                rgba(255, 255, 255, 0)
+            );
         }
     </style>
 </head>
@@ -416,6 +442,7 @@
 
             <div class="results-section" id="resultsSection">
                 <h2>Результаты сопоставления</h2>
+                <div id="resultsBanner" style="display:none;"></div>
                 <div class="btn-group">
                     <button class="btn btn-primary" onclick="downloadExcel()" id="downloadBtn">
                         📥 Скачать Excel файл
@@ -517,10 +544,26 @@
 
         function showAlert(message, type = 'success') {
             const container = document.getElementById('alertContainer');
-            container.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
-            setTimeout(() => {
-                container.innerHTML = '';
-            }, 5000);
+            const closeBtn =
+                '<span onclick="this.parentElement.remove()" ' +
+                'style="float:right; cursor:pointer; font-weight:bold; ' +
+                'padding:0 8px; user-select:none; font-size:18px;" ' +
+                'title="Закрыть">✕</span>';
+            // Сообщения формируются в коде (без пользовательского ввода),
+            // допустимо вставлять готовый HTML для форматирования (<strong> и т.п.).
+            container.innerHTML =
+                `<div class="alert alert-${type}">${closeBtn}${message}</div>`;
+            // Успех — короткое уведомление, оно не критично. Предупреждения и
+            // ошибки висят до явного закрытия, чтобы пользователь точно прочитал.
+            if (type === 'success') {
+                setTimeout(() => {
+                    container.innerHTML = '';
+                }, 5000);
+            } else {
+                // Для warning/error — прокручиваем страницу к уведомлению,
+                // чтобы пользователь гарантированно его увидел.
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         async function processItems() {
@@ -547,6 +590,11 @@
             document.getElementById('loading').classList.add('active');
             document.getElementById('processBtn').disabled = true;
             document.getElementById('resultsSection').classList.remove('active');
+            const prevBanner = document.getElementById('resultsBanner');
+            if (prevBanner) {
+                prevBanner.style.display = 'none';
+                prevBanner.innerHTML = '';
+            }
 
             try {
                 const response = await fetch(`${API_URL}/api/match`, {
@@ -564,13 +612,27 @@
                     currentResults = data.results;
                     displayResults(data.results);
                     const warnings = Array.isArray(data.warnings) ? data.warnings : [];
+                    const banner = document.getElementById('resultsBanner');
+                    banner.style.display = 'none';
+                    banner.innerHTML = '';
                     if (warnings.includes('gigachat_quota_exceeded')) {
-                        showAlert(
-                            '⚠️ Лимит GigaChat исчерпан. Сопоставление выполнено в локальном ' +
+                        const msg =
+                            '⚠️ <strong>GigaChat не отработал:</strong> лимит исчерпан (HTTP 402). ' +
+                            'Сопоставление выполнено в локальном режиме (без LLM) — ' +
+                            'точность может быть ниже обычной. ' +
+                            'Пополните баланс в личном кабинете Сбера, чтобы вернуть полную точность.';
+                        banner.innerHTML = `<div class="alert alert-warning">${msg}</div>`;
+                        banner.style.display = 'block';
+                        showAlert(msg, 'warning');
+                    } else if (warnings.includes('gigachat_unavailable')) {
+                        const msg =
+                            '⚠️ <strong>GigaChat не отработал</strong> (сервер разорвал соединение ' +
+                            'или превысил таймаут). Сопоставление выполнено в локальном ' +
                             'режиме (без LLM) — точность может быть ниже обычной. ' +
-                            'Пополните баланс в личном кабинете Сбера, чтобы вернуть полную точность.',
-                            'warning'
-                        );
+                            'Попробуйте повторить запрос через минуту.';
+                        banner.innerHTML = `<div class="alert alert-warning">${msg}</div>`;
+                        banner.style.display = 'block';
+                        showAlert(msg, 'warning');
                     } else {
                         showAlert('Сопоставление выполнено успешно!', 'success');
                     }
@@ -586,7 +648,15 @@
                     showAlert(data.error || 'Ошибка при обработке', 'error');
                 }
             } catch (error) {
-                showAlert('Ошибка подключения к серверу: ' + error.message, 'error');
+                const errMsg = String(error && error.message || error);
+                showAlert(
+                    '⚠️ <strong>Не удалось выполнить сопоставление.</strong> ' +
+                    'Возможно, сервер временно недоступен или GigaChat не отвечает. ' +
+                    'Попробуйте ещё раз через минуту.<br>' +
+                    '<span style="font-size:13px; opacity:0.8;">Техническая информация: ' +
+                    errMsg + '</span>',
+                    'error'
+                );
             } finally {
                 document.getElementById('loading').classList.remove('active');
                 document.getElementById('processBtn').disabled = false;
@@ -768,7 +838,8 @@
                     showAlert(`Успешно загружено ${data.count} позиций из заявки!`, 'success');
                 } else if (data.error_code === 'gigachat_quota_exceeded') {
                     const quotaMsg =
-                        '⚠️ Лимит GigaChat исчерпан (оплата требуется). ' +
+                        '⚠️ <strong>GigaChat не отработал:</strong> лимит исчерпан ' +
+                        '(HTTP 402 Payment Required). ' +
                         'Пополните баланс в личном кабинете Сбера ' +
                         'или дождитесь сброса дневного/месячного лимита. ' +
                         'Пока лимит не восстановлен, используйте режим «📎 По шаблону» — ' +

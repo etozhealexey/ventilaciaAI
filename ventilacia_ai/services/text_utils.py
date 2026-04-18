@@ -11,6 +11,16 @@ PRODUCT_TYPES = [
     "врезка", "заглушка", "ниппель", "муфта", "адаптер", "фланец",
 ]
 
+# Модификаторы/подтипы: если присутствуют в кандидате, но отсутствуют в запросе —
+# это ДРУГОЙ продукт (например, «гибкий воздуховод» vs обычный оцинкованный).
+# За каждый такой модификатор у кандидата, которого нет в запросе, начисляется штраф.
+PRODUCT_MODIFIERS = [
+    "гибкий", "гофрированный", "изолированный", "полужесткий", "полужёсткий",
+    "утепленный", "утеплённый", "теплоизолированный", "шумоизолированный",
+    "спирально-навивной", "спиральновитой", "сэндвич", "двухстенный",
+    "нержавеющий", "пластиковый", "алюминиевый", "пвх",
+]
+
 
 def normalize_name(name: str) -> str:
     """
@@ -228,6 +238,8 @@ def rank_candidates(
     query_dims = extract_dimensions(query_normalized)
     query_type = extract_product_type(query_normalized)
 
+    query_modifiers = {m for m in PRODUCT_MODIFIERS if m in query_normalized}
+
     scored: list[tuple[float, int]] = []
     for idx, row in candidates_df.iterrows():
         cand_norm = row.get("name_normalized") or normalize_name(
@@ -247,7 +259,15 @@ def rank_candidates(
         # Бонус за совпадение типа
         type_bonus = 0.1 if query_type and query_type == cand_type else 0.0
 
-        combined = text_sim * 0.4 + dim_score * 0.5 + type_bonus
+        # Штраф за «лишние» модификаторы у кандидата, которых нет в запросе.
+        # Например: запрос «Воздуховод … Ø160» vs кандидат «Воздуховод гибкий ф160».
+        # «гибкий» — это другой продукт, не просто уточнение.
+        modifier_penalty = 0.0
+        for mod in PRODUCT_MODIFIERS:
+            if mod in cand_norm and mod not in query_modifiers:
+                modifier_penalty += 0.08
+
+        combined = text_sim * 0.4 + dim_score * 0.5 + type_bonus - modifier_penalty
         scored.append((combined, idx))
 
     scored.sort(key=lambda x: -x[0])
