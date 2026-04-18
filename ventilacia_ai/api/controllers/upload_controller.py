@@ -4,6 +4,7 @@ from typing import Any
 
 from fastapi import UploadFile
 
+from ventilacia_ai.clients.gigachat_client import GigaChatQuotaExceeded
 from ventilacia_ai.services import config_service
 from ventilacia_ai.services.parsing_service import (
     parse_application_file,
@@ -73,6 +74,19 @@ async def _parse_upload(file: UploadFile, smart: bool) -> dict[str, Any]:
                     "2 — количество, 3 — ед.изм. Либо воспользуйтесь режимом «Распознать заявку»."
                 )
         return payload
+    except GigaChatQuotaExceeded as quota_err:
+        return {
+            "success": False,
+            "error_code": "gigachat_quota_exceeded",
+            "error": (
+                "Лимит GigaChat исчерпан (HTTP 402 Payment Required). "
+                "Пополните баланс в личном кабинете Сбера "
+                "(https://developers.sber.ru/studio/) или дождитесь сброса "
+                "дневного/месячного лимита. Попробуйте позже или воспользуйтесь "
+                "режимом «По шаблону», который не использует нейросеть."
+            ),
+            "detail": str(quota_err),
+        }
     except Exception as e:
         return {"success": False, "error": f"Ошибка обработки файла: {e}"}
     finally:

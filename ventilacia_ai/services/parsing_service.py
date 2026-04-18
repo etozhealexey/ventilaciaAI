@@ -6,7 +6,11 @@ import pandas as pd
 import pdfplumber
 from docx import Document
 
-from ventilacia_ai.clients.gigachat_client import get_gigachat_client
+from ventilacia_ai.clients.gigachat_client import (
+    GigaChatQuotaExceeded,
+    get_gigachat_client,
+    is_quota_exceeded,
+)
 from ventilacia_ai.services import config_service
 
 
@@ -313,6 +317,16 @@ def _parse_chunk_with_ai(text: str) -> list[dict[str, Any]]:
                 response = client.chat(full_prompt)
                 break
             except Exception as call_err:
+                # 402 ретраить бессмысленно — лимит/баланс не вернётся за пару секунд.
+                if is_quota_exceeded(call_err):
+                    print(
+                        "[PARSE_AI] Лимит GigaChat исчерпан (HTTP 402). "
+                        "Прерываю запросы без повторов."
+                    )
+                    raise GigaChatQuotaExceeded(
+                        "Лимит или баланс GigaChat исчерпан (HTTP 402 Payment Required). "
+                        "Пополните баланс в личном кабинете Сбера или дождитесь сброса лимита."
+                    ) from call_err
                 last_error = call_err
                 print(
                     f"[PARSE_AI] Попытка {attempt}/{_MAX_RETRIES} не удалась: {call_err}"

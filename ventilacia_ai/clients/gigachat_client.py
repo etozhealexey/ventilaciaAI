@@ -19,6 +19,22 @@ ensure_env_loaded()
 _DEFAULT_CHAT_MODEL = "GigaChat-Pro"
 
 
+class GigaChatQuotaExceeded(RuntimeError):
+    """Лимит или баланс GigaChat исчерпан (HTTP 402 Payment Required)."""
+
+
+def is_quota_exceeded(error: BaseException) -> bool:
+    """Определяет, что исключение от GigaChat — это 402 Payment Required."""
+    msg = str(error)
+    if '"status":402' in msg or '"status": 402' in msg:
+        return True
+    if "Payment Required" in msg or "payment required" in msg.lower():
+        return True
+    # SDK иногда пишет просто «402 https://...»
+    first_line = msg.split("\n", 1)[0]
+    return first_line.startswith("402 ") or " 402 " in f" {first_line} "
+
+
 def get_gigachat_client() -> "GigaChat":
     """Создает и возвращает клиент GigaChat с учётом переменных окружения и SSL."""
     if not GIGACHAT_AVAILABLE:

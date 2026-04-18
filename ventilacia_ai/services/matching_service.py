@@ -5,7 +5,11 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from ventilacia_ai.clients.gigachat_client import get_gigachat_client
+from ventilacia_ai.clients.gigachat_client import (
+    GigaChatQuotaExceeded,
+    get_gigachat_client,
+    is_quota_exceeded,
+)
 from ventilacia_ai.services.embeddings_service import (
     find_top_k_candidates,
     get_text_embedding,
@@ -644,13 +648,13 @@ def _handle_api_error(
     nomenclature_df: pd.DataFrame,
 ) -> list[dict[str, Any]]:
     """Обработка ошибок API (402 и др.) с фоллбэком на локальный поиск."""
-    error_str = str(api_error)
-    is_payment = "402" in error_str or "Payment Required" in error_str or "payment" in error_str.lower()
-
-    if not is_payment:
+    if not is_quota_exceeded(api_error):
         raise api_error
 
-    print("[GIGACHAT ERROR] Ошибка 402: Недостаточно средств на счету GigaChat API")
+    print(
+        "[GIGACHAT ERROR] Лимит GigaChat исчерпан (HTTP 402). "
+        "Продолжаю в режиме локального поиска (ranker + embeddings)."
+    )
     results: list[dict[str, Any]] = []
 
     for user_item in items_for_ai:

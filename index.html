@@ -742,6 +742,15 @@
                     
                     fileStatus.textContent = `✅ Загружено ${data.count} позиций из заявки`;
                     showAlert(`Успешно загружено ${data.count} позиций из заявки!`, 'success');
+                } else if (data.error_code === 'gigachat_quota_exceeded') {
+                    const quotaMsg =
+                        '⚠️ Лимит GigaChat исчерпан (оплата требуется). ' +
+                        'Пополните баланс в личном кабинете Сбера ' +
+                        'или дождитесь сброса дневного/месячного лимита. ' +
+                        'Пока лимит не восстановлен, используйте режим «📎 По шаблону» — ' +
+                        'он работает без нейросети.';
+                    fileStatus.textContent = '⚠️ Лимит GigaChat исчерпан';
+                    showAlert(quotaMsg, 'error');
                 } else {
                     let detail = data.error || data.warning;
                     if (!detail) {
