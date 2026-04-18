@@ -448,11 +448,22 @@ def _verify_and_enrich(
 # 5. Главная функция сопоставления
 # ---------------------------------------------------------------------------
 
+_last_run_warnings: list[str] = []
+
+
+def get_last_run_warnings() -> list[str]:
+    """Возвращает копию предупреждений последнего вызова `find_matching_items`."""
+    return list(_last_run_warnings)
+
+
 def find_matching_items(
     user_items: list[dict[str, Any]],
     nomenclature_df: pd.DataFrame,
 ) -> list[dict[str, Any]]:
     """Высокоуровневая функция сопоставления списка позиций с номенклатурой."""
+    # Сбрасываем предупреждения в начале каждого запуска.
+    _last_run_warnings.clear()
+
     client = get_gigachat_client()
     training_data = load_training_data()
 
@@ -655,6 +666,9 @@ def _handle_api_error(
         "[GIGACHAT ERROR] Лимит GigaChat исчерпан (HTTP 402). "
         "Продолжаю в режиме локального поиска (ranker + embeddings)."
     )
+    # Запоминаем для ответа API, чтобы фронт мог показать баннер.
+    if "gigachat_quota_exceeded" not in _last_run_warnings:
+        _last_run_warnings.append("gigachat_quota_exceeded")
     results: list[dict[str, Any]] = []
 
     for user_item in items_for_ai:

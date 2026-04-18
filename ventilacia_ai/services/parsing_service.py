@@ -380,6 +380,9 @@ def _parse_chunk_with_ai(text: str) -> list[dict[str, Any]]:
         cleaned = validate_and_clean_items(items)
         print(f"[PARSE_AI] После валидации осталось: {len(cleaned)} позиций")
         return cleaned
+    except GigaChatQuotaExceeded:
+        # Пробрасываем выше, чтобы контроллер мог вернуть 402 во фронт.
+        raise
     except Exception as e:
         print(f"Ошибка при парсинге через нейросеть: {e}")
         return []

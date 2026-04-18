@@ -5,10 +5,22 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 
+from ventilacia_ai.clients.gigachat_client import (
+    GigaChatQuotaExceeded,
+    is_quota_exceeded,
+)
 from ventilacia_ai.models.schemas import MatchRequest
 from ventilacia_ai.services import config_service
 from ventilacia_ai.services import matching_service, excel_service, nomenclature_service
 from ventilacia_ai.services import training_store
+
+
+_QUOTA_MESSAGE = (
+    "Лимит GigaChat исчерпан (HTTP 402 Payment Required). "
+    "Пополните баланс в личном кабинете Сбера "
+    "(https://developers.sber.ru/studio/) или дождитесь сброса "
+    "дневного/месячного лимита."
+)
 
 router = APIRouter()
 
@@ -30,7 +42,31 @@ async def match_items(payload: MatchRequest) -> JSONResponse:
         {"name": i.name, "quantity": i.quantity or "", "unit": i.unit or ""}
         for i in payload.items
     ]
-    results = matching_service.find_matching_items(items, nomenclature_service.nomenclature_df)
+    try:
+        results = matching_service.find_matching_items(
+            items, nomenclature_service.nomenclature_df
+        )
+    except GigaChatQuotaExceeded:
+        return JSONResponse(
+            {
+                "success": False,
+                "error_code": "gigachat_quota_exceeded",
+                "error": _QUOTA_MESSAGE,
+            }
+        )
+    except Exception as e:
+        if is_quota_exceeded(e):
+            return JSONResponse(
+                {
+                    "success": False,
+                    "error_code": "gigachat_quota_exceeded",
+                    "error": _QUOTA_MESSAGE,
+                    "detail": str(e),
+                }
+            )
+        raise
+
+    warnings = matching_service.get_last_run_warnings()
     filename = excel_service.create_excel_file(results)
 
     return JSONResponse(
@@ -38,6 +74,7 @@ async def match_items(payload: MatchRequest) -> JSONResponse:
             "success": True,
             "results": results,
             "filename": filename,
+            "warnings": warnings,
         }
     )
 
