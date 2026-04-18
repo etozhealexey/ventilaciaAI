@@ -26,12 +26,32 @@ _CANDIDATE_FILES = (
 )
 
 _loaded = False
+_found_path: Path | None = None
 _last_diagnostic: str | None = None
 
 
 def get_last_diagnostic() -> str | None:
     """Возвращает последнее диагностическое сообщение (для вывода на старте)."""
     return _last_diagnostic
+
+
+def _build_diagnostic(prefix: str) -> str:
+    """Собирает информацию о путях, которую видит процесс."""
+    try:
+        entries = sorted(p.name for p in _PROJECT_ROOT.iterdir())
+    except OSError:
+        entries = []
+    env_like = [n for n in entries if "env" in n.lower()]
+    lines = [
+        prefix,
+        f"Корень проекта для поиска .env: {_PROJECT_ROOT}",
+        f"Текущий рабочий каталог (CWD):  {Path.cwd()}",
+    ]
+    if env_like:
+        lines.append("Файлы с 'env' в имени в корне: " + ", ".join(env_like))
+    else:
+        lines.append("В корне нет ни одного файла, содержащего 'env' в имени.")
+    return "\n   ".join(lines)
 
 
 def _read_with_fallback_encodings(path: Path) -> str | None:
@@ -74,10 +94,11 @@ def ensure_env_loaded() -> Path | None:
     """
     Загружает переменные окружения из `.env` рядом с корнем проекта.
     Возвращает путь к реально использованному файлу (или None, если не найден).
+    Идемпотентна: при повторных вызовах возвращает тот же результат, что и первый.
     """
-    global _loaded, _last_diagnostic
+    global _loaded, _found_path, _last_diagnostic
     if _loaded:
-        return None
+        return _found_path
 
     found: Path | None = None
     for name in _CANDIDATE_FILES:
@@ -87,25 +108,11 @@ def ensure_env_loaded() -> Path | None:
             break
 
     if found is None:
-        # Собираем диагностику: что видит Python в корне проекта?
-        try:
-            entries = sorted(p.name for p in _PROJECT_ROOT.iterdir())
-        except OSError:
-            entries = []
-        env_like = [n for n in entries if "env" in n.lower()]
-        diag_lines = [
-            f"Корень проекта для поиска .env: {_PROJECT_ROOT}",
-            f"Текущий рабочий каталог (CWD):  {Path.cwd()}",
-        ]
-        if env_like:
-            diag_lines.append(
-                "В корне есть файлы с 'env' в имени: " + ", ".join(env_like)
-                + " — переименуйте нужный в '.env' (без расширения)."
-            )
-        else:
-            diag_lines.append("В корне нет ни одного файла, содержащего 'env' в имени.")
-        _last_diagnostic = "\n   ".join(diag_lines)
+        _last_diagnostic = _build_diagnostic(
+            "Диагностика поиска .env:"
+        )
         _loaded = True
+        _found_path = None
         return None
 
     loaded_ok = False
@@ -126,5 +133,7 @@ def ensure_env_loaded() -> Path | None:
         if text is not None:
             _apply_env_text(text)
 
+    _last_diagnostic = _build_diagnostic(f".env прочитан: {found}")
     _loaded = True
+    _found_path = found
     return found
