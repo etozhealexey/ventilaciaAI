@@ -48,6 +48,162 @@ def extract_text_from_excel(file_path: str) -> str:
     return "\n".join(lines)
 
 
+def _norm_excel_header_cell(value: object) -> str:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
+    return str(value).strip().lower()
+
+
+def _detect_excel_position_table_header(df: pd.DataFrame) -> tuple[int, dict[str, int]] | None:
+    """
+    Ищет строку заголовка вида «№ | Наименование | Ед.изм. | Кол-во».
+    Возвращает (индекс строки заголовка, {"name": i, "qty": j, "unit": k}).
+    """
+    max_scan = min(50, len(df))
+    for idx in range(max_scan):
+        row = df.iloc[idx]
+        ncols = len(row)
+        if ncols < 2:
+            continue
+        texts = [_norm_excel_header_cell(row.iloc[j]) for j in range(ncols)]
+        name_col = None
+        for j, t in enumerate(texts):
+            if "наименование" in t:
+                name_col = j
+                break
+        if name_col is None:
+            continue
+
+        qty_col: int | None = None
+        for j, t in enumerate(texts):
+            if j == name_col:
+                continue
+            t_compact = t.replace(" ", "")
+            if any(
+                k in t_compact
+                for k in ("кол-во", "количество", "кол.", "колво")
+            ) or t_compact in ("кол-во", "количество"):
+                qty_col = j
+                break
+        if qty_col is None and ncols >= 3:
+            qty_col = ncols - 1
+
+        unit_col: int | None = None
+        for j, t in enumerate(texts):
+            if j == name_col or j == (qty_col or -1):
+                continue
+            if ("ед" in t and "изм" in t) or t in ("ед.изм.", "ед. изм.", "ед.изм"):
+                unit_col = j
+                break
+        if unit_col is None and ncols >= 4 and qty_col is not None:
+            for j in range(ncols):
+                if j not in (name_col, qty_col):
+                    unit_col = j
+                    break
+
+        if qty_col is None:
+            continue
+
+        out: dict[str, int] = {"name": name_col, "qty": qty_col}
+        if unit_col is not None:
+            out["unit"] = unit_col
+        return idx, out
+
+
+def _parse_excel_table_fallback(file_path: str) -> list[dict[str, Any]]:
+    """
+    Локальный разбор Excel-таблицы с заголовком «Наименование» (без LLM).
+    Используется, если GigaChat не вернул JSON (отказ модели, фильтры и т.д.).
+    """
+    skip_names = {
+        "наименование",
+        "название",
+        "name",
+        "позиция",
+        "наименование позиции",
+        "наименование товара",
+        "№",
+        "номер",
+        "n",
+        "п/п",
+        "пп",
+    }
+    try:
+        df = pd.read_excel(file_path, header=None)
+    except Exception as e:
+        print(f"[PARSE_FALLBACK] Не удалось прочитать Excel: {e}")
+        return []
+
+    detected = _detect_excel_position_table_header(df)
+    if detected is None:
+        return []
+    header_idx, cols = detected
+    name_col = cols["name"]
+    qty_col = cols["qty"]
+    unit_col = cols.get("unit")
+
+    items_raw: list[dict[str, Any]] = []
+    for idx in range(header_idx + 1, len(df)):
+        row = df.iloc[idx]
+        if name_col >= len(row):
+            continue
+        raw_name = row.iloc[name_col]
+        if pd.isna(raw_name):
+            continue
+        name = str(raw_name).strip()
+        if not name or len(name) < 3:
+            continue
+        low = name.lower()
+        if low in skip_names or low in {"ном.", "ном"}:
+            continue
+        if "наименование" in low and len(name) < 45:
+            continue
+
+        quantity = "1"
+        if qty_col < len(row) and pd.notna(row.iloc[qty_col]):
+            qv = row.iloc[qty_col]
+            if isinstance(qv, bool):
+                quantity = "1" if qv else "0"
+            elif isinstance(qv, (int, float)):
+                fv = float(qv)
+                quantity = str(int(fv)) if fv == int(fv) else str(fv).replace(",", ".")
+            else:
+                qty_str = str(qv).strip()
+                m = re.search(r"(\d+(?:[.,]\d+)?)", qty_str)
+                if m:
+                    quantity = m.group(1).replace(",", ".")
+
+        unit = ""
+        if unit_col is not None and unit_col < len(row) and pd.notna(row.iloc[unit_col]):
+            unit_raw = str(row.iloc[unit_col]).strip()
+            if unit_raw.lower() not in {
+                "ед.изм",
+                "ед. изм",
+                "ед.изм.",
+                "единица измерения",
+                "unit",
+                "",
+            }:
+                unit = unit_raw
+
+        items_raw.append(
+            {
+                "row_number": idx + 1,
+                "name": name,
+                "quantity": quantity,
+                "unit": unit,
+            }
+        )
+
+    cleaned = validate_and_clean_items(items_raw)
+    if cleaned:
+        print(
+            f"[PARSE_FALLBACK] Извлечено из Excel-таблицы без LLM: "
+            f"{len(cleaned)} позиций (строка заголовка {header_idx + 1})"
+        )
+    return cleaned
+
+
 def parse_excel_application(file_path: str) -> list[dict[str, Any]]:
     """
     Строгий парсер Excel фиксированного формата (быстро, без LLM):
@@ -593,7 +749,13 @@ def parse_application_file_smart(file_path: str, extension: str) -> list[dict[st
         text = extract_text_from_excel(file_path)
         if not text:
             return []
-        return parse_text_with_ai(text)
+        items = parse_text_with_ai(text)
+        if items:
+            return items
+        fallback = _parse_excel_table_fallback(file_path)
+        if fallback:
+            return fallback
+        return []
     if ext == "docx":
         return parse_docx_application(file_path)
     if ext == "pdf":

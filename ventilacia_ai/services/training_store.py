@@ -134,6 +134,30 @@ def confirm_results_batch(results: list[dict[str, Any]], min_confidence: float =
     return added
 
 
+def save_training_from_matches(results: list[dict[str, Any]]) -> int:
+    """
+    Сохраняет в обучение явно выбранные пользователем результаты сопоставления
+    (как коррекции: исходное наименование → код/наименование/ед.изм).
+    Без фильтра по уверенности — строки уже подтверждены выбором галочкой.
+    """
+    saved = 0
+    for r in results:
+        original = str(r.get("original_name", "")).strip()
+        code = r.get("matched_code")
+        if not original or not code:
+            continue
+        name = r.get("matched_name")
+        unit = r.get("matched_unit")
+        if add_user_correction(
+            original,
+            str(code).strip(),
+            str(name).strip() if name else None,
+            str(unit).strip() if unit else None,
+        ):
+            saved += 1
+    return saved
+
+
 def add_user_correction(
     original_name: str,
     corrected_code: str,

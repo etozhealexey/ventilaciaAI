@@ -86,6 +86,31 @@ async def confirm_results(payload: ConfirmResultsRequest) -> JSONResponse:
     return JSONResponse({"success": True, "saved": saved})
 
 
+@router.post("/api/train-selected")
+async def train_selected(payload: ConfirmResultsRequest) -> JSONResponse:
+    """Сохраняет в обучение только явно отмеченные пользователем строки результатов."""
+    if not payload.results:
+        raise HTTPException(status_code=400, detail="Список результатов пуст")
+    saved = training_store.save_training_from_matches(payload.results)
+    return JSONResponse({"success": True, "saved": saved})
+
+
+@router.post("/api/export-excel")
+async def export_excel(payload: ConfirmResultsRequest) -> FileResponse:
+    """Формирует Excel только по переданным строкам результатов (как в таблице на экране)."""
+    if not payload.results:
+        raise HTTPException(status_code=400, detail="Нет строк для выгрузки")
+    filename = excel_service.create_excel_file(list(payload.results))
+    filepath = os.path.join(config_service.REPORTS_FOLDER, filename)
+    if not os.path.exists(filepath):
+        raise HTTPException(status_code=500, detail="Не удалось создать файл")
+    return FileResponse(
+        filepath,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        filename=filename,
+    )
+
+
 @router.get("/api/download/{filename}")
 async def download_file(filename: str) -> FileResponse:
     """Скачивание сгенерированного Excel файла."""

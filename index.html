@@ -236,33 +236,41 @@
             overflow-wrap: break-word;
         }
 
-        /* Адаптивные ширины колонок (9 колонок) */
+        /* Адаптивные ширины колонок (чекбокс + 9 колонок) */
         .results-table th:nth-child(1),
-        .results-table td:nth-child(1) { width: 20%; }
+        .results-table td:nth-child(1) { width: 2.5%; text-align: center; }
 
         .results-table th:nth-child(2),
-        .results-table td:nth-child(2) { width: 5%; text-align: center; }
+        .results-table td:nth-child(2) { width: 18%; }
 
         .results-table th:nth-child(3),
-        .results-table td:nth-child(3) { width: 6%; text-align: center; }
+        .results-table td:nth-child(3) { width: 5%; text-align: center; }
 
         .results-table th:nth-child(4),
-        .results-table td:nth-child(4) { width: 8%; }
+        .results-table td:nth-child(4) { width: 6%; text-align: center; }
 
         .results-table th:nth-child(5),
-        .results-table td:nth-child(5) { width: 22%; }
+        .results-table td:nth-child(5) { width: 8%; }
 
         .results-table th:nth-child(6),
-        .results-table td:nth-child(6) { width: 6%; text-align: center; }
+        .results-table td:nth-child(6) { width: 20%; }
 
         .results-table th:nth-child(7),
-        .results-table td:nth-child(7) { width: 7%; text-align: center; }
+        .results-table td:nth-child(7) { width: 6%; text-align: center; }
 
         .results-table th:nth-child(8),
-        .results-table td:nth-child(8) { width: 18%; }
+        .results-table td:nth-child(8) { width: 7%; text-align: center; }
 
         .results-table th:nth-child(9),
-        .results-table td:nth-child(9) { width: 5%; text-align: center; }
+        .results-table td:nth-child(9) { width: 16%; }
+
+        .results-table th:nth-child(10),
+        .results-table td:nth-child(10) { width: 5%; text-align: center; }
+
+        .results-actions {
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
 
         .results-table th {
             background: #f5f5f5;
@@ -360,6 +368,18 @@
             font-weight: 700;
         }
 
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+            border-left: 6px solid #17a2b8;
+        }
+
+        #saveTrainingNotice {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+
         /* Контейнер верхних алертов — делаем sticky, чтобы уведомление
            не исчезало из виду при прокрутке страницы. */
         #alertContainer:not(:empty) {
@@ -443,15 +463,13 @@
             <div class="results-section" id="resultsSection">
                 <h2>Результаты сопоставления</h2>
                 <div id="resultsBanner" style="display:none;"></div>
-                <div class="btn-group">
-                    <button class="btn btn-primary" onclick="downloadExcel()" id="downloadBtn">
-                        📥 Скачать Excel файл
-                    </button>
-                </div>
                 <div class="results-container">
                     <table class="results-table" id="resultsTable">
                     <thead>
                         <tr>
+                            <th title="Выбрать все">
+                                <input type="checkbox" id="selectAllResults" aria-label="Выбрать все строки" onchange="toggleSelectAllResults(this.checked)">
+                            </th>
                             <th>Исходное наименование</th>
                             <th>Кол-во</th>
                             <th>Ед.изм (заявка)</th>
@@ -466,6 +484,22 @@
                     <tbody id="resultsBody"></tbody>
                     </table>
                 </div>
+                <div class="btn-group results-actions">
+                    <button type="button" class="btn btn-primary" onclick="downloadExcel()" id="downloadBtn"
+                        title="В Excel попадут только строки, отмеченные галочкой (с учётом исправлений в таблице).">
+                        📥 Скачать Excel
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="saveTrainingSelected()" id="btnSaveTraining">
+                        💾 Сохранить
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="deleteSelectedRows()" id="btnDeleteRows">
+                        🗑 Удалить
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="cancelResults()" id="btnCancelResults">
+                        ↩ Отменить
+                    </button>
+                </div>
+                <div id="saveTrainingNotice" class="alert alert-info" style="display: none;" role="status"></div>
             </div>
         </div>
         </div>
@@ -595,6 +629,7 @@
                 prevBanner.style.display = 'none';
                 prevBanner.innerHTML = '';
             }
+            hideSaveTrainingNotice();
 
             try {
                 const response = await fetch(`${API_URL}/api/match`, {
@@ -663,7 +698,16 @@
             }
         }
 
+        function hideSaveTrainingNotice() {
+            const n = document.getElementById('saveTrainingNotice');
+            if (n) {
+                n.style.display = 'none';
+                n.innerHTML = '';
+            }
+        }
+
         function displayResults(results) {
+            hideSaveTrainingNotice();
             const tbody = document.getElementById('resultsBody');
             tbody.innerHTML = '';
 
@@ -677,6 +721,7 @@
                 else if (confidence >= 0.5) confidenceClass = 'confidence-medium';
 
                 row.innerHTML = `
+                    <td><input type="checkbox" class="result-check" data-index="${index}" aria-label="Выбрать строку" onchange="onResultCheckChange()"></td>
                     <td>${result.original_name}</td>
                     <td>${result.quantity}</td>
                     <td>${result.source_unit || '-'}</td>
@@ -697,7 +742,7 @@
                 const correctionRow = document.createElement('tr');
                 correctionRow.id = `correction-row-${index}`;
                 correctionRow.innerHTML = `
-                    <td colspan="9">
+                    <td colspan="10">
                         <div class="correction-form" id="correction-form-${index}">
                             <strong>Исправление для: "${result.original_name}"</strong>
                             <div style="margin-top: 10px;">
@@ -721,6 +766,125 @@
             });
 
             document.getElementById('resultsSection').classList.add('active');
+            const selAll = document.getElementById('selectAllResults');
+            if (selAll) {
+                selAll.checked = false;
+                selAll.indeterminate = false;
+            }
+        }
+
+        function getSelectedResultIndices() {
+            return [...document.querySelectorAll('.result-check:checked')]
+                .map(cb => parseInt(cb.getAttribute('data-index'), 10))
+                .filter(i => !Number.isNaN(i));
+        }
+
+        function toggleSelectAllResults(checked) {
+            document.querySelectorAll('.result-check').forEach(cb => { cb.checked = checked; });
+            const el = document.getElementById('selectAllResults');
+            if (el) el.indeterminate = false;
+        }
+
+        function onResultCheckChange() {
+            const checks = [...document.querySelectorAll('.result-check')];
+            const el = document.getElementById('selectAllResults');
+            if (!el || !checks.length) return;
+            const n = checks.filter(c => c.checked).length;
+            el.checked = n === checks.length;
+            el.indeterminate = n > 0 && n < checks.length;
+        }
+
+        async function saveTrainingSelected() {
+            const indices = getSelectedResultIndices();
+            if (!indices.length) {
+                showAlert('Отметьте хотя бы одну строку галочкой', 'error');
+                return;
+            }
+            const results = indices.map(i => currentResults[i]).filter(Boolean);
+            const toSave = results.filter(r => {
+                const c = r.matched_code;
+                if (c == null || c === '') return false;
+                const s = String(c).trim();
+                return s !== '' && s !== '-';
+            });
+            if (!toSave.length) {
+                showAlert('У отмеченных строк нет кода для обучения', 'error');
+                return;
+            }
+            try {
+                const response = await fetch(`${API_URL}/api/train-selected`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ results: toSave })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    let detail = `В обучение записано примеров: <strong>${data.saved}</strong>.`;
+                    const skipped = results.length - toSave.length;
+                    if (skipped > 0) {
+                        detail += ` Строк без кода не сохранялись: ${skipped}.`;
+                    }
+                    const notice = document.getElementById('saveTrainingNotice');
+                    if (notice) {
+                        const close =
+                            '<span onclick="hideSaveTrainingNotice()" ' +
+                            'style="float:right; cursor:pointer; font-weight:bold; ' +
+                            'padding:0 8px; user-select:none; font-size:18px;" title="Закрыть">✕</span>';
+                        notice.innerHTML =
+                            close +
+                            '<strong>Результаты сопоставления сохранены в обучение.</strong> ' +
+                            detail +
+                            ' Они будут учитываться при следующих сопоставлениях.';
+                        notice.style.display = 'block';
+                        notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                    showAlert(
+                        'Результаты сопоставления сохранены в обучение (' + data.saved + ' записей).',
+                        'success'
+                    );
+                    checkStatus();
+                } else {
+                    showAlert(data.error || data.detail || 'Ошибка сохранения', 'error');
+                }
+            } catch (e) {
+                showAlert('Ошибка подключения: ' + e.message, 'error');
+            }
+        }
+
+        function deleteSelectedRows() {
+            const indices = getSelectedResultIndices();
+            if (!indices.length) {
+                showAlert('Отметьте строки для удаления', 'error');
+                return;
+            }
+            const set = new Set(indices);
+            currentResults = currentResults.filter((_, i) => !set.has(i));
+            if (currentResults.length === 0) {
+                cancelResults();
+                showAlert('Все строки удалены. Результат сопоставления сброшен.', 'success');
+                return;
+            }
+            currentFilename = null;
+            displayResults(currentResults);
+            showAlert(`Удалено строк: ${indices.length}.`, 'success');
+        }
+
+        function cancelResults() {
+            currentResults = [];
+            currentFilename = null;
+            hideSaveTrainingNotice();
+            document.getElementById('resultsSection').classList.remove('active');
+            document.getElementById('resultsBody').innerHTML = '';
+            const banner = document.getElementById('resultsBanner');
+            if (banner) {
+                banner.style.display = 'none';
+                banner.innerHTML = '';
+            }
+            const sel = document.getElementById('selectAllResults');
+            if (sel) {
+                sel.checked = false;
+                sel.indeterminate = false;
+            }
         }
 
         function showCorrectionForm(index, originalName) {
@@ -762,7 +926,11 @@
                     document.getElementById(`code-${index}`).textContent = correctedCode;
                     document.getElementById(`name-${index}`).textContent = correctedName;
                     document.getElementById(`unit-${index}`).textContent = correctedUnit;
-                    
+                    if (currentResults[index]) {
+                        currentResults[index].matched_code = correctedCode;
+                        currentResults[index].matched_name = correctedName;
+                        currentResults[index].matched_unit = correctedUnit;
+                    }
                     hideCorrectionForm(index);
                     showAlert('Исправление сохранено! Модель будет использовать это в будущих сопоставлениях.', 'success');
                 } else {
@@ -774,21 +942,66 @@
         }
 
 
+        function parseFilenameFromContentDisposition(header) {
+            if (!header) return null;
+            const utf8 = /filename\*=UTF-8''([^;\n]+)/i.exec(header);
+            if (utf8) {
+                try {
+                    return decodeURIComponent(utf8[1].trim());
+                } catch (e) {
+                    return utf8[1].trim();
+                }
+            }
+            const q = /filename="([^"]+)"/i.exec(header);
+            if (q) return q[1];
+            const p = /filename=([^;\n]+)/i.exec(header);
+            return p ? p[1].trim().replace(/^["']|["']$/g, '') : null;
+        }
+
         async function downloadExcel() {
-            if (!currentFilename) {
-                showAlert('Файл не найден', 'error');
+            const indices = [...getSelectedResultIndices()].sort((a, b) => a - b);
+            if (!indices.length) {
+                showAlert(
+                    'Отметьте галочками строки, которые нужно включить в Excel ' +
+                    '(в шапке таблицы можно выбрать все). В файл попадут только отмеченные строки ' +
+                    'в том виде, как в таблице сейчас, включая исправления.',
+                    'error'
+                );
                 return;
             }
+            const rows = indices.map(i => currentResults[i]).filter(Boolean);
             try {
-                await fetch(`${API_URL}/api/confirm-results`, {
+                const response = await fetch(`${API_URL}/api/export-excel`, {
                     method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({ results: currentResults })
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ results: rows })
                 });
+                if (!response.ok) {
+                    let err = await response.text();
+                    try {
+                        const j = JSON.parse(err);
+                        err = j.detail || j.error || err;
+                    } catch (e) { /* use raw */ }
+                    showAlert('Не удалось сформировать Excel: ' + (err || response.status), 'error');
+                    return;
+                }
+                const blob = await response.blob();
+                const cd = response.headers.get('Content-Disposition');
+                const fname =
+                    parseFilenameFromContentDisposition(cd) ||
+                    `результат_${rows.length}_стр.xlsx`;
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fname;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                URL.revokeObjectURL(url);
+                showAlert(`Файл скачан: ${rows.length} строк.`, 'success');
             } catch (e) {
-                // не блокируем скачивание при ошибке сохранения
+                showAlert('Ошибка при скачивании: ' + e.message, 'error');
             }
-            window.open(`${API_URL}/api/download/${currentFilename}`, '_blank');
         }
 
         async function handleFileUpload(event, smart) {

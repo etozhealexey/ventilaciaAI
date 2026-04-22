@@ -8,7 +8,7 @@ from ventilacia_ai.services.config_service import REPORTS_FOLDER
 
 
 def create_excel_file(results: list[dict[str, Any]], filename: str | None = None) -> str:
-    """Создаёт Excel файл: Код | Наименование полное | Ед.изм | Количество (без заголовков)."""
+    """Создаёт Excel файл: № | Код | Наименование полное | Ед.изм | Количество (без заголовков)."""
     if filename is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"результат_сопоставления_{timestamp}.xlsx"
@@ -19,10 +19,11 @@ def create_excel_file(results: list[dict[str, Any]], filename: str | None = None
     ws.title = "Сопоставление"
 
     for row_idx, result in enumerate(results, 1):
-        ws.cell(row=row_idx, column=1, value=result.get("matched_code") or "")
-        ws.cell(row=row_idx, column=2, value=result.get("matched_name") or "")
-        ws.cell(row=row_idx, column=3, value=result.get("matched_unit") or "")
-        ws.cell(row=row_idx, column=4, value=result.get("quantity", ""))
+        ws.cell(row=row_idx, column=1, value=row_idx)
+        ws.cell(row=row_idx, column=2, value=result.get("matched_code") or "")
+        ws.cell(row=row_idx, column=3, value=result.get("matched_name") or "")
+        ws.cell(row=row_idx, column=4, value=result.get("matched_unit") or "")
+        ws.cell(row=row_idx, column=5, value=result.get("quantity", ""))
 
     for col in ws.columns:
         max_length = 0
