@@ -1,7 +1,7 @@
 import os
 import ssl
 
-from dotenv import load_dotenv
+from ventilacia_ai.services.env_loader import ensure_env_loaded
 
 try:
     from gigachat import GigaChat
@@ -12,11 +12,27 @@ except ImportError:
     print("Предупреждение: библиотека gigachat не установлена. Установите: pip install gigachat")
 
 
-load_dotenv()
+ensure_env_loaded()
 
 # По умолчанию SDK подставляет модель «GigaChat» (часто это Lite). Если лимит Lite исчерпан,
 # а подписка на Pro/Max активна — задайте GIGACHAT_MODEL=GigaChat-Pro или GigaChat-Max в .env.
 _DEFAULT_CHAT_MODEL = "GigaChat-Pro"
+
+
+class GigaChatQuotaExceeded(RuntimeError):
+    """Лимит или баланс GigaChat исчерпан (HTTP 402 Payment Required)."""
+
+
+def is_quota_exceeded(error: BaseException) -> bool:
+    """Определяет, что исключение от GigaChat — это 402 Payment Required."""
+    msg = str(error)
+    if '"status":402' in msg or '"status": 402' in msg:
+        return True
+    if "Payment Required" in msg or "payment required" in msg.lower():
+        return True
+    # SDK иногда пишет просто «402 https://...»
+    first_line = msg.split("\n", 1)[0]
+    return first_line.startswith("402 ") or " 402 " in f" {first_line} "
 
 
 def get_gigachat_client() -> "GigaChat":
@@ -47,13 +63,27 @@ def get_gigachat_client() -> "GigaChat":
 
     model = os.getenv("GIGACHAT_MODEL", _DEFAULT_CHAT_MODEL).strip() or _DEFAULT_CHAT_MODEL
 
+    # Увеличенный тайм-аут нужен для длинных промптов (например, разбор заявок с таблицами).
+    try:
+        timeout_sec = float(os.getenv("GIGACHAT_TIMEOUT", "180"))
+    except ValueError:
+        timeout_sec = 180.0
+
     try:
         return GigaChat(
             credentials=credentials,
             verify_ssl_certs=False,
             model=model,
+            timeout=timeout_sec,
         )
     except (TypeError, ValueError):
-        return GigaChat(credentials=credentials, model=model)
+        try:
+            return GigaChat(
+                credentials=credentials,
+                model=model,
+                timeout=timeout_sec,
+            )
+        except (TypeError, ValueError):
+            return GigaChat(credentials=credentials, model=model)
 
 

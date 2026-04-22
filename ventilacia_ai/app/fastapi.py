@@ -12,8 +12,11 @@ from ventilacia_ai.services.embeddings_service import (
     build_nomenclature_index,
     initialize_embeddings,
 )
+from ventilacia_ai.services.env_loader import ensure_env_loaded, get_last_diagnostic
 from ventilacia_ai.services.nomenclature_service import load_nomenclature, nomenclature_df
 from ventilacia_ai.services.training_store import load_training_data
+
+_env_file = ensure_env_loaded()
 
 
 app = FastAPI(title="ventilacia_ai", version="1.0.0")
@@ -32,6 +35,29 @@ async def startup_event() -> None:
     print("=" * 60)
     print("🚀 Запуск FastAPI сервера сопоставления с обучением")
     print("=" * 60)
+
+    has_creds = bool(
+        os.getenv("GIGACHAT_CREDENTIALS")
+        or (os.getenv("GIGACHAT_CLIENT_ID") and os.getenv("GIGACHAT_AUTH_KEY"))
+    )
+    print()
+    if _env_file is not None:
+        print(f"🔑 Переменные окружения загружены из: {_env_file}")
+    elif has_creds:
+        print(
+            "🔑 Файл .env не найден, но ключи уже заданы в окружении процесса "
+            "(например, через `setx` или `$env:GIGACHAT_CREDENTIALS=...`) — ок."
+        )
+    else:
+        print(
+            "🔑 Файл .env НЕ найден и переменные окружения не заданы. "
+            "Создайте '.env' рядом с app.py (UTF-8, без расширения .txt) "
+            "или задайте ключи в оболочке."
+        )
+    diag = get_last_diagnostic()
+    if diag:
+        print(f"   {diag}")
+    print(f"   GIGACHAT_CREDENTIALS: {'задан' if has_creds else 'ПУСТО'}")
 
     print("\n📊 Загрузка номенклатуры...")
     load_nomenclature()

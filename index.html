@@ -325,9 +325,11 @@
         }
 
         .alert {
-            padding: 15px;
+            padding: 16px 20px;
             border-radius: 8px;
             margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.5;
         }
 
         .alert-success {
@@ -340,6 +342,36 @@
             background: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
+            border-left: 6px solid #dc3545;
+            font-weight: 500;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #664d03;
+            border: 1px solid #ffda6a;
+            border-left: 6px solid #f59e0b;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+        }
+
+        .alert-warning strong,
+        .alert-error strong {
+            font-weight: 700;
+        }
+
+        /* Контейнер верхних алертов — делаем sticky, чтобы уведомление
+           не исчезало из виду при прокрутке страницы. */
+        #alertContainer:not(:empty) {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding-top: 10px;
+            background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.95) 85%,
+                rgba(255, 255, 255, 0)
+            );
         }
     </style>
 </head>
@@ -365,10 +397,17 @@
                 
                 <div style="margin-bottom: 20px; padding: 20px; background: #f0f0f0; border-radius: 10px; border: 2px dashed #ccc;">
                     <h3 style="margin-bottom: 15px; font-size: 16px;">📄 Загрузить заявку</h3>
-                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Excel (.xlsx, .xls) — столбцы: Наименование | Количество | Ед.изм</p>
-                    <input type="file" id="pdfFileInput" accept=".xlsx,.xls" style="display: none;" onchange="handleFileUpload(event)">
+                    <p style="font-size: 12px; color: #666; margin-bottom: 12px;">
+                        <strong>По шаблону</strong> — быстрый Excel (.xlsx, .xls): 1 столбец — наименование, 2 — количество, 3 — ед.изм. Без нейросети.<br>
+                        <strong>Распознать заявку</strong> — любой Excel/Word/PDF с текстовым слоем. Нейросеть сама извлекает позиции (10–30 сек).
+                    </p>
+                    <input type="file" id="pdfFileInput" accept=".xlsx,.xls" style="display: none;" onchange="handleFileUpload(event, false)">
+                    <input type="file" id="smartFileInput" accept=".xlsx,.xls,.docx,.pdf" style="display: none;" onchange="handleFileUpload(event, true)">
                     <button class="btn btn-secondary" onclick="document.getElementById('pdfFileInput').click()" style="margin-right: 10px;">
-                        📎 Выбрать файл
+                        📎 По шаблону (Excel)
+                    </button>
+                    <button class="btn btn-primary" onclick="document.getElementById('smartFileInput').click()" style="margin-right: 10px;">
+                        🤖 Распознать заявку (Excel/Word/PDF)
                     </button>
                     <span id="fileStatus" style="color: #666; font-size: 14px;"></span>
                     <div id="fileProgress" style="display: none; margin-top: 10px;">
@@ -403,6 +442,7 @@
 
             <div class="results-section" id="resultsSection">
                 <h2>Результаты сопоставления</h2>
+                <div id="resultsBanner" style="display:none;"></div>
                 <div class="btn-group">
                     <button class="btn btn-primary" onclick="downloadExcel()" id="downloadBtn">
                         📥 Скачать Excel файл
@@ -504,10 +544,26 @@
 
         function showAlert(message, type = 'success') {
             const container = document.getElementById('alertContainer');
-            container.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
-            setTimeout(() => {
-                container.innerHTML = '';
-            }, 5000);
+            const closeBtn =
+                '<span onclick="this.parentElement.remove()" ' +
+                'style="float:right; cursor:pointer; font-weight:bold; ' +
+                'padding:0 8px; user-select:none; font-size:18px;" ' +
+                'title="Закрыть">✕</span>';
+            // Сообщения формируются в коде (без пользовательского ввода),
+            // допустимо вставлять готовый HTML для форматирования (<strong> и т.п.).
+            container.innerHTML =
+                `<div class="alert alert-${type}">${closeBtn}${message}</div>`;
+            // Успех — короткое уведомление, оно не критично. Предупреждения и
+            // ошибки висят до явного закрытия, чтобы пользователь точно прочитал.
+            if (type === 'success') {
+                setTimeout(() => {
+                    container.innerHTML = '';
+                }, 5000);
+            } else {
+                // Для warning/error — прокручиваем страницу к уведомлению,
+                // чтобы пользователь гарантированно его увидел.
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         async function processItems() {
@@ -534,6 +590,11 @@
             document.getElementById('loading').classList.add('active');
             document.getElementById('processBtn').disabled = true;
             document.getElementById('resultsSection').classList.remove('active');
+            const prevBanner = document.getElementById('resultsBanner');
+            if (prevBanner) {
+                prevBanner.style.display = 'none';
+                prevBanner.innerHTML = '';
+            }
 
             try {
                 const response = await fetch(`${API_URL}/api/match`, {
@@ -550,12 +611,52 @@
                     currentFilename = data.filename;
                     currentResults = data.results;
                     displayResults(data.results);
-                    showAlert('Сопоставление выполнено успешно!', 'success');
+                    const warnings = Array.isArray(data.warnings) ? data.warnings : [];
+                    const banner = document.getElementById('resultsBanner');
+                    banner.style.display = 'none';
+                    banner.innerHTML = '';
+                    if (warnings.includes('gigachat_quota_exceeded')) {
+                        const msg =
+                            '⚠️ <strong>GigaChat не отработал:</strong> лимит исчерпан (HTTP 402). ' +
+                            'Сопоставление выполнено в локальном режиме (без LLM) — ' +
+                            'точность может быть ниже обычной. ' +
+                            'Пополните баланс в личном кабинете Сбера, чтобы вернуть полную точность.';
+                        banner.innerHTML = `<div class="alert alert-warning">${msg}</div>`;
+                        banner.style.display = 'block';
+                        showAlert(msg, 'warning');
+                    } else if (warnings.includes('gigachat_unavailable')) {
+                        const msg =
+                            '⚠️ <strong>GigaChat не отработал</strong> (сервер разорвал соединение ' +
+                            'или превысил таймаут). Сопоставление выполнено в локальном ' +
+                            'режиме (без LLM) — точность может быть ниже обычной. ' +
+                            'Попробуйте повторить запрос через минуту.';
+                        banner.innerHTML = `<div class="alert alert-warning">${msg}</div>`;
+                        banner.style.display = 'block';
+                        showAlert(msg, 'warning');
+                    } else {
+                        showAlert('Сопоставление выполнено успешно!', 'success');
+                    }
+                } else if (data.error_code === 'gigachat_quota_exceeded') {
+                    showAlert(
+                        '⚠️ Лимит GigaChat исчерпан (оплата требуется). ' +
+                        'Сопоставление не удалось выполнить. ' +
+                        'Пополните баланс в личном кабинете Сбера ' +
+                        'или дождитесь сброса лимита.',
+                        'error'
+                    );
                 } else {
                     showAlert(data.error || 'Ошибка при обработке', 'error');
                 }
             } catch (error) {
-                showAlert('Ошибка подключения к серверу: ' + error.message, 'error');
+                const errMsg = String(error && error.message || error);
+                showAlert(
+                    '⚠️ <strong>Не удалось выполнить сопоставление.</strong> ' +
+                    'Возможно, сервер временно недоступен или GigaChat не отвечает. ' +
+                    'Попробуйте ещё раз через минуту.<br>' +
+                    '<span style="font-size:13px; opacity:0.8;">Техническая информация: ' +
+                    errMsg + '</span>',
+                    'error'
+                );
             } finally {
                 document.getElementById('loading').classList.remove('active');
                 document.getElementById('processBtn').disabled = false;
@@ -690,32 +791,34 @@
             window.open(`${API_URL}/api/download/${currentFilename}`, '_blank');
         }
 
-        async function handleFileUpload(event) {
+        async function handleFileUpload(event, smart) {
             const file = event.target.files[0];
             if (!file) return;
-            
-            const allowedTypes = [
-                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                'application/vnd.ms-excel'
-            ];
-            const allowedExtensions = ['.xlsx', '.xls'];
+
+            const allowedExtensions = smart
+                ? ['.xlsx', '.xls', '.docx', '.pdf']
+                : ['.xlsx', '.xls'];
             const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
-            
-            if (!allowedTypes.includes(file.type) && !allowedExtensions.includes(fileExtension)) {
-                showAlert('Пожалуйста, выберите Excel-файл формата .xlsx или .xls', 'error');
+
+            if (!allowedExtensions.includes(fileExtension)) {
+                showAlert('Поддерживаются форматы: ' + allowedExtensions.join(', '), 'error');
                 return;
             }
-            
+
             const fileStatus = document.getElementById('fileStatus');
             const fileProgress = document.getElementById('fileProgress');
             const formData = new FormData();
             formData.append('file', file);
-            
-            fileStatus.textContent = `Загружается: ${file.name}...`;
+
+            fileStatus.textContent = smart
+                ? `Распознавание «${file.name}» через нейросеть, это может занять 10–30 сек...`
+                : `Загружается: ${file.name}...`;
             fileProgress.style.display = 'flex';
+
+            const endpoint = smart ? '/api/upload-application-smart' : '/api/upload-application';
             
             try {
-                const response = await fetch(`${API_URL}/api/upload-application`, {
+                const response = await fetch(`${API_URL}${endpoint}`, {
                     method: 'POST',
                     body: formData
                 });
@@ -733,12 +836,21 @@
                     
                     fileStatus.textContent = `✅ Загружено ${data.count} позиций из заявки`;
                     showAlert(`Успешно загружено ${data.count} позиций из заявки!`, 'success');
+                } else if (data.error_code === 'gigachat_quota_exceeded') {
+                    const quotaMsg =
+                        '⚠️ <strong>GigaChat не отработал:</strong> лимит исчерпан ' +
+                        '(HTTP 402 Payment Required). ' +
+                        'Пополните баланс в личном кабинете Сбера ' +
+                        'или дождитесь сброса дневного/месячного лимита. ' +
+                        'Пока лимит не восстановлен, используйте режим «📎 По шаблону» — ' +
+                        'он работает без нейросети.';
+                    fileStatus.textContent = '⚠️ Лимит GigaChat исчерпан';
+                    showAlert(quotaMsg, 'error');
                 } else {
-                    let detail = data.error;
+                    let detail = data.error || data.warning;
                     if (!detail) {
                         if (data.success && (!data.items || data.items.length === 0)) {
-                            detail =
-                                'В файле не найдено ни одной позиции (столбцы: 1 — наименование, 2 — количество, 3 — ед.изм).';
+                            detail = 'В файле не найдено ни одной позиции.';
                         } else {
                             detail = 'Не удалось извлечь позиции из файла';
                         }

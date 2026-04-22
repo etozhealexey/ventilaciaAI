@@ -3,12 +3,12 @@ from typing import Literal
 
 import numpy as np
 import pandas as pd
-from dotenv import load_dotenv
 
 from ventilacia_ai.services.config_service import NOMENCLATURE_INDEX_FILE
+from ventilacia_ai.services.env_loader import ensure_env_loaded
 from ventilacia_ai.services.text_utils import normalize_name
 
-load_dotenv()
+ensure_env_loaded()
 
 _embedding_model = None
 _embeddings_cache: dict[str, np.ndarray] = {}
